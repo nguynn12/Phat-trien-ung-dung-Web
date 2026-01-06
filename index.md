@@ -243,3 +243,23 @@ D. Chatbot (Gemini), Trang web (https://codepen.io/)
 
 # Chương 5.
 
+Câu 5.2 Nodejs là gì? Phát biểu nào không đúng?
+
+A. Nodejs là môi trường phát triển ứng dụng
+
+<mark>B. Nodejs là một ngôn ngữ lập trình</mark>
+
+C. Nodejs là nền tảng phát triển ứng dụng
+
+D. Có thể sử dụng Nodejs để tạo web server
+
+Câu 5.3 NPM là gì? Phát biểu nào không đúng?
+
+A. NPM là viết tắt của Node Package Manager
+
+B. NPM là công cụ để quản lý các thư viện dùng trong một ứng dụng chạy trên nền Nodejs
+
+C. NPM được cài đặt mặc định khi cài đặt Nodejs
+
+<mark>D. NPM gồm 3 thành phần: website, GUI và registry</mark>
+
