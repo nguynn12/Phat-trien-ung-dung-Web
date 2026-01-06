@@ -9,7 +9,7 @@
    }
 </style>
 
-# Chương 1. Web back-end - Một số khái niệm
+# Chương 1. Một số khái niệm
 
 ## 1.5 Bài tập
 
@@ -42,7 +42,7 @@
 
 <div align="center">
 <em>Đoạn mã JavaScript của trang web https://react.dev</em>
-</div> <br>
+</div> 
 
 Không thể biết chính xác lập trình viên đã sử dụng ngôn ngữ nào ở phía Server chỉ bằng cách xem mã nguồn trình duyệt. Lý do:
 
@@ -74,7 +74,7 @@ C. Website và ứng dụng web hoạt động dựa trên mô hình client-serv
 
 <mark>D. Chỉ cần sử dụng HTML và CSS là có thể tạo ra được ứng dụng web</mark>
 
-# Chương 2. Web back-end - Tổng quan về phát triển ứng dụng web
+# Chương 2. Tổng quan về phát triển ứng dụng web
 
 ## 2.3. Bài tập
 
@@ -158,3 +158,88 @@ B. Cải thiện chất lượng viết mã
 <mark>C. Giảm khả năng bảo mật</mark >
 
 D. Dễ dàng bảo trì và mở rộng
+
+# Chương 3. Web server
+
+## 3.3 Bài tập
+
+### Bài 3.1 Thực hành lại các cài đặt trong bài học.
+
+[![Thư mục cài đặt nginx](Image/2.1.png)](Image/2.1.png)
+
+<b>Câu 3.2 Một số phần mềm web server phổ biến. Phát biểu nào không đúng?</b>
+
+A. Apache
+
+B. Nginx
+
+<mark>C. SSI</mark>
+
+D. Nodejs
+
+<b>Câu 3.3 Các chức năng của Web server là gì. Phát biểu nào không đúng?</b>
+
+A. Lưu trữ các tập tin của ứng dụng web
+
+B. Nhận request từ client
+
+C. Xử lý request
+
+<mark>D. Nhận response từ máy client</mark>
+
+Bài tập 3.4 Thực hiện một số cấu hình cho Nginx:
+
+- (a) Lắng nghe trên cổng 65535
+
+- (b) Trỏ web root về một thư mục khác ổ đĩa C:\ (ví dụ: D:\TeoShop)
+
+- (c) Khi client gửi request tới web root, tập tin mặc định trả về là index.py, tạo thêm tập tin index.py để kiểm tra.
+
+- (d) Lắng nghe trên cổng 65536 được không? Tại sao
+
+Cổng mạng (port) có giá trị từ 0 đến 65535. Vì vậy, cổng 65536 vượt qua phạm vi hợp lệ của cổng TCP/UDP và sẽ không thể sử dụng được. Các cổng hợp lệ phải trong phạm vi 0-65535.
+
+# Chương 4. 
+
+4.2 Lệnh nào được sử dụng để nhúng Git vào thư mục dự án?
+
+<mark>A. git init</mark>
+
+B. git --init
+
+C. git initialize
+
+D. git embed
+
+4.3 Lệnh nào sử dụng để kiểm tra trên máy tính đã có phần mềm Git hay chưa?
+
+A. git ver
+
+B. git version
+
+<mark>C. git --version hoặc git -v</mark>
+
+D. git --ver
+
+4.4 Trong Git, kho lưu trữ (repo, repository) là gì?
+
+A. Là thư mục dự án
+
+<mark>B. Là thư mục dự án đã được nhúng Git</mark>
+
+C. Là thư mục cài đặt phần mềm Git
+
+D. Là thư mục .git (trong thư mục dự án)
+
+4.5 Bạn có thể sử dụng các công cụ sau để viết mã. Phát biểu nào không đúng?
+
+A. Text editor
+
+<mark>B. MS Word</mark>
+
+C. IDE, Code Editor
+
+D. Chatbot (Gemini), Trang web (https://codepen.io/) 
+
+# Chương 5.
+
