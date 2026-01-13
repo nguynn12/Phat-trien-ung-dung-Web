@@ -263,3 +263,121 @@ C. NPM được cài đặt mặc định khi cài đặt Nodejs
 
 <mark>D. NPM gồm 3 thành phần: website, GUI và registry</mark>
 
+# Chương 6. 
+
+Bài tập 6.2 Làm sao biết được một gói cài đặt ở chế độ cục bộ (locally) hay toàn cục (globally)? Khi cài đặt các gói (package) ở chế độ cục bộ và toàn cục (globally) thì các gói sẽ được lưu ở đâu? Làm sao bạn biết được?
+
+Trong Node.js, các gói (package) có thể được cài đặt theo hai chế độ là cục bộ (local) và toàn cục (global). Mỗi chế độ có mục đích sử dụng và vị trí lưu trữ khác nhau.
+
+1. Cài đặt gói ở chế độ cục bộ (local)
+
+Gói được cài đặt ở chế độ cục bộ khi sử dụng lệnh:
+
+npm install <tên-gói>
+
+
+Khi cài đặt theo cách này, gói sẽ được lưu trong thư mục node_modules của chính dự án đang làm việc. Gói cục bộ chỉ được sử dụng trong phạm vi dự án đó và thường là các thư viện cần thiết để ứng dụng có thể chạy được, ví dụ như express, mongoose, axios.
+
+Có thể nhận biết gói cài đặt cục bộ bằng cách:
+
+Kiểm tra thư mục node_modules trong dự án
+
+Hoặc sử dụng lệnh:
+
+npm list <tên-gói>
+
+
+2. Cài đặt gói ở chế độ toàn cục (global)
+
+Gói được cài đặt ở chế độ toàn cục khi sử dụng lệnh:
+
+npm install -g <tên-gói>
+
+
+Khi đó, gói sẽ được lưu trong thư mục npm toàn cục của hệ thống (trên Windows thường nằm trong thư mục AppData của người dùng). Các gói cài đặt toàn cục thường là những công cụ dòng lệnh, có thể sử dụng ở bất kỳ thư mục nào, ví dụ như nodemon, npm, pnpm.
+
+Có thể nhận biết gói cài đặt toàn cục bằng cách:
+
+Sử dụng lệnh:
+
+npm list -g <tên-gói>
+
+
+Hoặc kiểm tra vị trí thực thi của lệnh bằng:
+
+where <tên-gói>
+
+Kết luận
+
+Cài đặt cục bộ dùng cho từng dự án cụ thể và được lưu trong thư mục node_modules của dự án, trong khi cài đặt toàn cục dùng cho toàn hệ thống và thường áp dụng cho các công cụ hỗ trợ phát triển. Việc phân biệt hai chế độ giúp quản lý gói hiệu quả và tránh xung đột phiên bản.
+
+
+Bài tập 6.3 Sự khác nhau khi cài đặt gói ở chế độ dependencies và devDependencies?
+
+Trong file package.json của một ứng dụng Node.js, các gói phụ thuộc được chia thành hai nhóm chính là dependencies và devDependencies, mỗi nhóm có vai trò khác nhau.
+
+1. dependencies
+
+dependencies là những gói bắt buộc phải có khi ứng dụng chạy thực tế. Các gói này chứa mã cần thiết để chương trình hoạt động đúng. Nếu thiếu các gói trong dependencies, ứng dụng sẽ không thể chạy hoặc sẽ bị lỗi.
+
+Ví dụ, trong một ứng dụng web Node.js, thư viện express thường được cài đặt vào dependencies vì nó được sử dụng trực tiếp khi server xử lý yêu cầu từ người dùng.
+
+Gói được cài vào dependencies bằng lệnh:
+
+npm install <tên-gói>
+
+2. devDependencies
+
+devDependencies là những gói chỉ phục vụ cho quá trình phát triển, không cần thiết khi ứng dụng chạy trên môi trường thật (production). Các gói này giúp lập trình viên làm việc thuận tiện hơn, như tự động khởi động lại server, kiểm tra lỗi cú pháp, hoặc định dạng mã nguồn.
+
+Ví dụ, nodemon thường được cài vào devDependencies vì nó chỉ hỗ trợ trong lúc lập trình và không cần thiết khi triển khai ứng dụng.
+
+Gói được cài vào devDependencies bằng lệnh:
+
+npm install <tên-gói> --save-dev
+
+Kết luận
+
+Sự khác nhau giữa dependencies và devDependencies nằm ở mục đích sử dụng. dependencies là các thư viện cần thiết để ứng dụng hoạt động, còn devDependencies chỉ phục vụ cho quá trình phát triển. Việc phân loại đúng giúp ứng dụng nhẹ hơn và dễ triển khai hơn trên môi trường thực tế.
+
+Câu 6.4 Trong ứng dụng chạy trên nền Nodejs, tập tin package.json dùng để làm gì? Phát biểu nào không đúng?
+
+A. Chứa thông tin mô tả về ứng dụng
+
+B. Quản lý các phụ thuộc
+
+C. Chỉ ra tập tin JavaScript đầu tiên được thực thi
+
+<mark>D. Chứa mã để tạo giao diện ứng dụng</mark>
+
+Câu 6.5 PNPM là gì? Phát biểu nào không đúng?
+
+A. Giúp tiết kiệm dung lượng đĩa
+
+B. Có thể thay thế hoặc bổ sung cho NPM
+
+C. Là viết tắt của Performant Node Package Manager 
+
+<mark>D. Không thể thay thế hoặc bổ sung cho NPM</mark>
+
+Câu 6.6 Express trong Node.js được sử dụng để làm gì?
+
+<mark>A. Tạo ứng dụng web và API</mark>
+
+B. Quản lý cơ sở dữ liệu
+
+C. Thiết kế giao diện người dùng
+
+D. Kiểm tra hiệu suất ứng dụng
+
+Câu 6.7 Nodemon trong Node.js được sử dụng để làm gì?
+
+A. Kết nối với cơ sở dữ liệu
+
+B. Tạo giao diện người dùng cho ứng dụng
+
+C. Quản lý các gói phụ thuộc
+
+<mark>D. Tự động khởi động lại server khi mã thay đổi</mark>
+
+# Chương 7.
