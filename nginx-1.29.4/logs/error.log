@@ -1,0 +1,4 @@
+2026/01/27 14:13:17 [error] 1852#15100: *1 CreateFile() "C:\Users\PC602\Downloads\nginx-1.29.4\nginx-1.29.4/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2026/01/27 14:19:02 [notice] 19604#14348: signal process started
+2026/01/27 14:19:04 [error] 9468#6288: *3 CreateFile() "C:\Users\PC602\Downloads\nginx-1.29.4\nginx-1.29.4/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:9000", referrer: "http://localhost:9000/"
+2026/01/27 15:36:14 [notice] 14060#328: signal process started
