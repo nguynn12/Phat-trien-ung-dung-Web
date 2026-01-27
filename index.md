@@ -55,24 +55,20 @@ Trình duyệt (Client) chỉ có khả năng hiểu và hiển thị 3 thành p
 Mã nguồn phía Server (Backend code) chứa các logic nghiệp vụ quan trọng và kết nối cơ sở dữ liệu. Mã này nằm tuyệt đối trên máy chủ và không bao giờ được gửi xuống máy khách (trình duyệt). Do đó, chức năng "View Source" của trình duyệt chỉ cho thấy "kết quả" chứ không cho thấy "nguyên liệu" gốc.
 
 <b>Câu 1.3 Phát biểu nào không đúng khi nói về web, trang web và website?</b>
-
 A. Web là hệ thống thông tin toàn cầu
-
 B. Web được tạo thành nhờ các trang web và sự liên kết giữa chúng
-
 <mark>C. Một trang web chứa nhiều website</mark>
-
 D. Một website chứa nhiều trang web có liên quan đến nhau
 
+> *Giải thích: Quan hệ bao hàm bị sai. Một Website (tập hợp) chứa nhiều Trang web (phần tử con). Trang web (Web page) chỉ là một tài liệu đơn lẻ hiển thị trên trình duyệt, nó không thể chứa nhiều website bên trong nó được.*
+
 <b>Câu 1.4 Phát biểu nào không đúng khi nói về website và ứng dụng web?</b>
-
 A. Không có sự phân biệt rõ ràng giữa website và ứng dụng web
-
 B. Một website và ứng dụng web có một địa chỉ URL để truy cập
-
 C. Website và ứng dụng web hoạt động dựa trên mô hình client-server
-
 <mark>D. Chỉ cần sử dụng HTML và CSS là có thể tạo ra được ứng dụng web</mark>
+
+> *Giải thích: HTML và CSS chỉ tạo ra được giao diện tĩnh (Static Website). Để tạo ra "Ứng dụng web" (Web App) có khả năng tương tác, xử lý logic và dữ liệu người dùng, bắt buộc phải có ngôn ngữ lập trình (như JavaScript, PHP, Java...) và cơ sở dữ liệu.*
 
 # Chương 2. Tổng quan về phát triển ứng dụng web
 
@@ -129,35 +125,29 @@ C. Website và ứng dụng web hoạt động dựa trên mô hình client-serv
 | Gin             | Go (Golang)  | [gin-gonic.com](https://gin-gonic.com/)                                   |
 | Echo            | Go (Golang)  | [echo.labstack.com](https://echo.labstack.com/)                           |
 
-<b>2.3 Có 3 cách để tạo ra một ứng dụng web? Phát biểu nào không đúng?</b>
-
+<b>Câu 2.3 Có 3 cách để tạo ra một ứng dụng web? Phát biểu nào không đúng?</b>
 A. Sử dụng CMS
-
 B. Sử dụng framework và thư viện hỗ trợ
-
 C. Viết thuần bằng ngôn ngữ lập trình mà không sử dụng framework, thư viện hỗ trợ
-
 <mark>D. Sử dụng trình duyệt web</mark>
 
-<b>2.4 Những ưu điểm khi sử dụng CMS để tạo ra ứng dụng web. Phát biểu nào không đúng?</b>
+> *Giải thích: Trình duyệt web (như Chrome, Firefox) là môi trường để thực thi (run) và hiển thị ứng dụng phía Client, không phải là công cụ hay phương pháp để xây dựng (build/create) mã nguồn phần mềm.*
 
+<b>Câu 2.4 Những ưu điểm khi sử dụng CMS để tạo ra ứng dụng web. Phát biểu nào không đúng?</b>
 <mark>A. Cần kiến thức lập trình chuyên sâu</mark>
-
 B. Tối ưu SEO
-
 C. Dễ sử dụng, dễ quản lý, tiết kiệm thời gian
-
 D. Chi phí phát triển ứng dụng thấp
 
-<b>2.5 Những ưu điểm khi sử dụng framework và thư viện để tạo ra ứng dụng web. Phát biểu nào không đúng?</b>
+> *Giải thích: CMS (Hệ quản trị nội dung) sinh ra để giúp người dùng có thể tạo và quản lý website mà không cần (hoặc cần rất ít) kiến thức lập trình. Yêu cầu kiến thức chuyên sâu là đặc điểm của việc tự viết code (coding from scratch).*
 
+<b>Câu 2.5 Những ưu điểm khi sử dụng framework và thư viện để tạo ra ứng dụng web. Phát biểu nào không đúng?</b>
 A. Tăng tốc độ phát triển
-
 B. Cải thiện chất lượng viết mã
-
-<mark>C. Giảm khả năng bảo mật</mark >
-
+<mark>C. Giảm khả năng bảo mật</mark>
 D. Dễ dàng bảo trì và mở rộng
+
+> *Giải thích: Framework thường cung cấp các lớp bảo mật mặc định để chống lại các lỗi phổ biến (như SQL Injection, XSS, CSRF). Do đó, sử dụng Framework đúng cách sẽ giúp tăng cường bảo mật chứ không phải làm giảm đi.*
 
 # Chương 3. Web server
 
@@ -381,3 +371,41 @@ C. Quản lý các gói phụ thuộc
 <mark>D. Tự động khởi động lại server khi mã thay đổi</mark>
 
 # Chương 7.
+
+<b>Câu 7.2 Trong môi trường phát triển ứng dụng Nodejs, phát biểu nào không đúng khi nói về gói cục bộ?</b>
+A. Gói cục bộ được cài đặt trong thư mục node_modules của dự án
+B. Gói cục bộ chỉ có thể được sử dụng trong dự án mà nó được cài đặt
+C. Gói cục bộ được quản lý thông qua file package.json và có thể sử dụng các phiên bản khác nhau giữa các dự án
+<mark>D. Gói cục bộ luôn được cài đặt toàn cục trên hệ thống để tất cả các dự án đều có thể truy cập</mark>
+
+> *Giải thích: Đây là đặc điểm của gói toàn cục (Global Package). Gói cục bộ (Local Package) được cài riêng biệt trong từng dự án để tránh xung đột phiên bản (Dependency Hell).*
+
+<b>Câu 7.3 Trong môi trường phát triển ứng dụng Nodejs, phát biểu nào không đúng khi nói về gói toàn cục?</b>
+<mark>A. Gói toàn cục luôn được liệt kê trong tập tin package.json của dự án</mark>
+B. Gói toàn cục thường được sử dụng cho các công cụ dòng lệnh (CLI) như nodemon
+C. Gói toàn cục được lưu trong thư mục toàn cục của hệ thống và có thể truy cập từ bất kỳ dự án nào
+D. Gói toàn cục được cài đặt bằng lệnh npm install -g <package-name>
+
+> *Giải thích: Gói toàn cục được cài đặt vào thư mục hệ thống của máy tính, nó không tự động được thêm vào danh sách dependencies trong file `package.json` của một dự án cụ thể.*
+
+<b>Câu 7.4 Trong môi trường phát triển ứng dụng Nodejs, phát biểu nào không đúng khi nói về kiểu cài đặt dependencies?</b>
+A. Các gói trong dependencies được cài đặt cục bộ trong dự án bằng lệnh npm install <package-name>
+B. Các gói trong dependencies là các phụ thuộc cần thiết để ứng dụng chạy trong môi trường triển khai, sản xuất (production)
+<mark>C. Các gói trong dependencies chỉ được sử dụng trong giai đoạn phát triển và không cần thiết khi triển khai ứng dụng (production)</mark>
+D. Các gói trong dependencies được liệt kê trong tập tin package.json và tự động cài đặt khi chạy npm install
+
+> *Giải thích: Các gói trong `dependencies` là các thư viện bắt buộc phải có để ứng dụng hoạt động (Runtime dependencies), ví dụ như Express, React, Mongoose. Nếu thiếu chúng ở môi trường Production, ứng dụng sẽ lỗi.*
+
+<b>Câu 7.5 Trong môi trường phát triển ứng dụng Nodejs, phát biểu nào không đúng khi nói về kiểu cài đặt devDependencies?</b>
+A. Các gói trong devDependencies được cài đặt bằng lệnh npm install <package-name> --save-dev
+<mark>B. Các gói trong devDependencies là các phụ thuộc cốt lõi để ứng dụng chạy trong môi trường triển khai (production)</mark>
+C. Các gói trong devDependencies chỉ cần thiết trong giai đoạn phát triển hoặc kiểm thử, không cần cho môi trường triển khai (production)
+D. Các gói trong devDependencies không được cài đặt khi chạy npm install --production
+
+> *Giải thích: `devDependencies` chỉ chứa các công cụ hỗ trợ quá trình phát triển (như Nodemon, Jest, ESLint). Khi deploy lên Production, để tối ưu hiệu năng và dung lượng, ta thường bỏ qua các gói này.*
+
+# Chương 8.
+
+# Chương 9.
+
+# Chương 10.
