@@ -11,7 +11,7 @@
 
 # Chương 1. Một số khái niệm
 
-## 1.5 Bài tập
+## 1.5. Bài tập
 
 <b>Câu 1.1 Liệt kê 3 gói thuê bao (tên gói, giá tiền) của 3 nhà cung cấp kết nối Internet tại Việt Nam.</b>
 
@@ -54,18 +54,18 @@ Trình duyệt (Client) chỉ có khả năng hiểu và hiển thị 3 thành p
 
 Mã nguồn phía Server (Backend code) chứa các logic nghiệp vụ quan trọng và kết nối cơ sở dữ liệu. Mã này nằm tuyệt đối trên máy chủ và không bao giờ được gửi xuống máy khách (trình duyệt). Do đó, chức năng "View Source" của trình duyệt chỉ cho thấy "kết quả" chứ không cho thấy "nguyên liệu" gốc.
 
-<b>Câu 1.3 Phát biểu nào không đúng khi nói về web, trang web và website?</b>
-A. Web là hệ thống thông tin toàn cầu
-B. Web được tạo thành nhờ các trang web và sự liên kết giữa chúng
-<mark>C. Một trang web chứa nhiều website</mark>
+<b>Câu 1.3 Phát biểu nào không đúng khi nói về web, trang web và website?</b> <br>
+A. Web là hệ thống thông tin toàn cầu <br>
+B. Web được tạo thành nhờ các trang web và sự liên kết giữa chúng <br>
+<mark>C. Một trang web chứa nhiều website</mark> <br>
 D. Một website chứa nhiều trang web có liên quan đến nhau
 
 > *Giải thích: Quan hệ bao hàm bị sai. Một Website (tập hợp) chứa nhiều Trang web (phần tử con). Trang web (Web page) chỉ là một tài liệu đơn lẻ hiển thị trên trình duyệt, nó không thể chứa nhiều website bên trong nó được.*
 
-<b>Câu 1.4 Phát biểu nào không đúng khi nói về website và ứng dụng web?</b>
-A. Không có sự phân biệt rõ ràng giữa website và ứng dụng web
-B. Một website và ứng dụng web có một địa chỉ URL để truy cập
-C. Website và ứng dụng web hoạt động dựa trên mô hình client-server
+<b>Câu 1.4 Phát biểu nào không đúng khi nói về website và ứng dụng web?</b> <br>
+A. Không có sự phân biệt rõ ràng giữa website và ứng dụng web <br>
+B. Một website và ứng dụng web có một địa chỉ URL để truy cập <br>
+C. Website và ứng dụng web hoạt động dựa trên mô hình client-server <br>
 <mark>D. Chỉ cần sử dụng HTML và CSS là có thể tạo ra được ứng dụng web</mark>
 
 > *Giải thích: HTML và CSS chỉ tạo ra được giao diện tĩnh (Static Website). Để tạo ra "Ứng dụng web" (Web App) có khả năng tương tác, xử lý logic và dữ liệu người dùng, bắt buộc phải có ngôn ngữ lập trình (như JavaScript, PHP, Java...) và cơ sở dữ liệu.*
@@ -125,26 +125,26 @@ C. Website và ứng dụng web hoạt động dựa trên mô hình client-serv
 | Gin             | Go (Golang)  | [gin-gonic.com](https://gin-gonic.com/)                                   |
 | Echo            | Go (Golang)  | [echo.labstack.com](https://echo.labstack.com/)                           |
 
-<b>Câu 2.3 Có 3 cách để tạo ra một ứng dụng web? Phát biểu nào không đúng?</b>
-A. Sử dụng CMS
-B. Sử dụng framework và thư viện hỗ trợ
-C. Viết thuần bằng ngôn ngữ lập trình mà không sử dụng framework, thư viện hỗ trợ
+<b>Câu 2.3 Có 3 cách để tạo ra một ứng dụng web? Phát biểu nào không đúng?</b> <br>
+A. Sử dụng CMS <br>
+B. Sử dụng framework và thư viện hỗ trợ <br>
+C. Viết thuần bằng ngôn ngữ lập trình mà không sử dụng framework, thư viện hỗ trợ <br>
 <mark>D. Sử dụng trình duyệt web</mark>
 
 > *Giải thích: Trình duyệt web (như Chrome, Firefox) là môi trường để thực thi (run) và hiển thị ứng dụng phía Client, không phải là công cụ hay phương pháp để xây dựng (build/create) mã nguồn phần mềm.*
 
-<b>Câu 2.4 Những ưu điểm khi sử dụng CMS để tạo ra ứng dụng web. Phát biểu nào không đúng?</b>
-<mark>A. Cần kiến thức lập trình chuyên sâu</mark>
-B. Tối ưu SEO
-C. Dễ sử dụng, dễ quản lý, tiết kiệm thời gian
+<b>Câu 2.4 Những ưu điểm khi sử dụng CMS để tạo ra ứng dụng web. Phát biểu nào không đúng?</b> <br>
+<mark>A. Cần kiến thức lập trình chuyên sâu</mark> <br>
+B. Tối ưu SEO <br>
+C. Dễ sử dụng, dễ quản lý, tiết kiệm thời gian <br>
 D. Chi phí phát triển ứng dụng thấp
 
 > *Giải thích: CMS (Hệ quản trị nội dung) sinh ra để giúp người dùng có thể tạo và quản lý website mà không cần (hoặc cần rất ít) kiến thức lập trình. Yêu cầu kiến thức chuyên sâu là đặc điểm của việc tự viết code (coding from scratch).*
 
-<b>Câu 2.5 Những ưu điểm khi sử dụng framework và thư viện để tạo ra ứng dụng web. Phát biểu nào không đúng?</b>
-A. Tăng tốc độ phát triển
-B. Cải thiện chất lượng viết mã
-<mark>C. Giảm khả năng bảo mật</mark>
+<b>Câu 2.5 Những ưu điểm khi sử dụng framework và thư viện để tạo ra ứng dụng web. Phát biểu nào không đúng?</b> <br>
+A. Tăng tốc độ phát triển <br>
+B. Cải thiện chất lượng viết mã <br>
+<mark>C. Giảm khả năng bảo mật</mark> <br>
 D. Dễ dàng bảo trì và mở rộng
 
 > *Giải thích: Framework thường cung cấp các lớp bảo mật mặc định để chống lại các lỗi phổ biến (như SQL Injection, XSS, CSRF). Do đó, sử dụng Framework đúng cách sẽ giúp tăng cường bảo mật chứ không phải làm giảm đi.*
@@ -155,7 +155,37 @@ D. Dễ dàng bảo trì và mở rộng
 
 ### Bài 3.1 Thực hành lại các cài đặt trong bài học.
 
-[![Thư mục cài đặt nginx](Image/2.1.png)](Image/2.1.png)
+Cài đặt nginx
+
+[![Thư mục cài đặt nginx](Image/3.1.png)](Image/3.1.png)
+
+Nếu chạy được Nginx, mở Task Manager của Windows, chọn tab Processes, sẽ thấy tiến trình nginx. Trong Task Manager, chọn tab Details sẽ thấy 2 tiến trình của Nginx (master process và worker process).
+
+[![Nginx trong Task Manager](Image/3.2.png)](Image/3.2.png)
+
+Một số lệnh của Nginx
+
+[![Một số lệnh của Nginx](Image/3.3.png)](Image/3.3.png)
+
+Tắt nginx, hiển thị trong TaskManager là trống không
+
+[![Tắt nginx](Image/3.4.png)](Image/3.4.png)
+
+Web server sử dụng nginx 
+
+[![Sử dụng nginx làm web server](Image/3.5.png)](Image/3.5.png)
+
+Khi đổi cổng kết nối sang 9000
+
+[![Đổi cổng kết nối](Image/3.6.png)](Image/3.6.png)
+
+Khắc phục lỗi cổng kết nối 9000
+
+[![Khắc phục lỗi](Image/3.7.png)](Image/3.7.png)
+
+Thay đổi nội dung của trang web
+
+[![Thay đổi nội dung](Image/3.8.png)](Image/3.8.png)
 
 <b>Câu 3.2 Một số phần mềm web server phổ biến. Phát biểu nào không đúng?</b>
 
@@ -189,7 +219,19 @@ Bài tập 3.4 Thực hiện một số cấu hình cho Nginx:
 
 Cổng mạng (port) có giá trị từ 0 đến 65535. Vì vậy, cổng 65536 vượt qua phạm vi hợp lệ của cổng TCP/UDP và sẽ không thể sử dụng được. Các cổng hợp lệ phải trong phạm vi 0-65535.
 
-# Chương 4. 
+[![Ảnh](Image/3.9.png)](Image/3.9.png)
+
+# Chương 4. Ứng dụng web bán hàng
+
+Bài tập 4.1 Thực hành các cài đặt trong bài học.
+
+Kiểm tra phiên bản git
+
+[![Ảnh](Image/4.1.png)](Image/4.1.png)
+
+Cài đặt git vào thư mục dự án
+
+[![Ảnh](Image/4.2.png)](Image/4.2.png)
 
 4.2 Lệnh nào được sử dụng để nhúng Git vào thư mục dự án?
 
@@ -231,7 +273,11 @@ C. IDE, Code Editor
 
 D. Chatbot (Gemini), Trang web (https://codepen.io/) 
 
-# Chương 5.
+# Chương 5. Nodejs và NPM
+
+Bài tập 5.1 Tải và cài đặt Nodejs, NPM trên máy tính. Kiểm tra để đảm bảo Nodejs và NPM sẵn sàng sử dụng.
+
+[![Ảnh](Image/5.1.png)](Image/5.1.png)
 
 Câu 5.2 Nodejs là gì? Phát biểu nào không đúng?
 
@@ -253,7 +299,31 @@ C. NPM được cài đặt mặc định khi cài đặt Nodejs
 
 <mark>D. NPM gồm 3 thành phần: website, GUI và registry</mark>
 
-# Chương 6. 
+# Chương 6. Cấu hình Web server trong Nodejs
+
+Bài tập 6.1 Thực hiện các cài đặt, cấu hình trong bài học.
+
+Package.json
+
+[![Thêm package.json](Image/6.1.png)](Image/6.1.png)
+
+Cài đặt PNPM
+
+[![Cài đặt PNPM](Image/6.2.png)](Image/6.2.png)
+
+Chạy tập tin index.js
+
+[![Chạy index.js](Image/6.3.png)](Image/6.3.png)
+
+Cài đặt Nodemon
+
+[![Cài đặt Nodemon](Image/6.4.png)](Image/6.4.png)
+
+Sử dụng Nodemon
+
+[![Sử dụng Nodemon](Image/6.5.png)](Image/6.5.png)
+
+*Link tài liệu thực hành: [Click on me](https://drive.google.com/drive/u/2/folders/1SLn_8MV9Wh72W1Ja0-DV2bNh-S3l0Nmv)*
 
 Bài tập 6.2 Làm sao biết được một gói cài đặt ở chế độ cục bộ (locally) hay toàn cục (globally)? Khi cài đặt các gói (package) ở chế độ cục bộ và toàn cục (globally) thì các gói sẽ được lưu ở đâu? Làm sao bạn biết được?
 
@@ -370,7 +440,33 @@ C. Quản lý các gói phụ thuộc
 
 <mark>D. Tự động khởi động lại server khi mã thay đổi</mark>
 
-# Chương 7.
+# Chương 7. Local và Global, Dependencies và devDependencies
+
+Bài tập 7.1 Thực hiện các cài đặt trong bài học.
+
+Cài đặt một gói theo kiểu cục bộ
+
+[![Package.json cục bộ](Image/7.1.png)](Image/7.1.png)
+
+[![Express cục bộ](Image/7.2.png)](Image/7.2.png)
+
+Gỡ bỏ một gói cục bộ (express)
+
+[![Xóa express](Image/7.3.png)](Image/7.3.png)
+
+Cài đặt một gói theo kiểu toàn cục
+
+[![Nodemon toàn cục](Image/7.4.png)](Image/7.4.png)
+
+Coi vị trí của gói toàn cục
+
+[![Global position](Image/7.5.png)](Image/7.5.png)
+
+Coi tất cả các gói đã cài trên máy
+
+[![All global files](Image/7.6.png)](Image/7.6.png)
+
+*Link tài liệu thực hành: [Click on me](https://drive.google.com/drive/u/2/folders/1SLn_8MV9Wh72W1Ja0-DV2bNh-S3l0Nmv)*
 
 <b>Câu 7.2 Trong môi trường phát triển ứng dụng Nodejs, phát biểu nào không đúng khi nói về gói cục bộ?</b>
 A. Gói cục bộ được cài đặt trong thư mục node_modules của dự án
@@ -404,8 +500,10 @@ D. Các gói trong devDependencies không được cài đặt khi chạy npm in
 
 > *Giải thích: `devDependencies` chỉ chứa các công cụ hỗ trợ quá trình phát triển (như Nodemon, Jest, ESLint). Khi deploy lên Production, để tối ưu hiệu năng và dung lượng, ta thường bỏ qua các gói này.*
 
-# Chương 8.
+# Chương 8. Lập trình đồng bộ, hàm ẩn danh trong JavaScript
 
-# Chương 9.
 
-# Chương 10.
+
+# Chương 9. Hàm mũi tên, lập trình bất đồng bộ trong JavaScript
+
+# Chương 10. Hàm callback
