@@ -3,7 +3,6 @@
       display: flex;
       gap: 20px;
    }
-
    .cot {
       flex: 1;
    }
@@ -16,7 +15,7 @@
 <b>Câu 1.1 Liệt kê 3 gói thuê bao (tên gói, giá tiền) của 3 nhà cung cấp kết nối Internet tại Việt Nam.</b>
 
 | Nhà cung cấp | Tên gói   | Dung lượng | Giá cước (VNĐ) |
-|--------------|-----------|------------|----------------|
+| :--- | :--- | :--- | :--- |
 | FPT Telecom  | Super 25  | 25Mbps     | 190.000        |
 | FPT Telecom  | Super 45  | 45Mbps     | 200.000        |
 | VNPT         | Home 1    | 30Mbps     | 165.000        |
@@ -24,35 +23,22 @@
 | Viettel      | NET1PLUS  | 40Mbps     | 165.000        |
 | Viettel      | NET2PLUS  | 80Mbps     | 180.000        |
 
-<b>Câu 1.2 Sử dụng trình duyệt để xem mã nguồn của trang web https://react.dev. Chỉ ra được đâu là mã HTML,CSS và JavaScript. Ngoài HTML, CSS, và JavaScript, bạn có biết được lập trình viên đã sử dụng ngôn ngữ lập trình nào ở phía server để tạo ra trang https://react.dev không? Tại sao?</b>
+<b>Câu 1.2 Sử dụng trình duyệt để xem mã nguồn của trang web https://react.dev. Chỉ ra được đâu là mã HTML, CSS và JavaScript. Ngoài HTML, CSS, và JavaScript, bạn có biết được lập trình viên đã sử dụng ngôn ngữ lập trình nào ở phía server để tạo ra trang https://react.dev không? Tại sao?</b>
 
 [![Đoạn mã HTML](Image/1.1.png)](Image/1.1.png)
-
-<div align="center">
-<em>Đoạn mã HTML của trang web https://react.dev</em>
-</div> <br>
+<div align="center"><em>Đoạn mã HTML của trang web https://react.dev</em></div> <br>
 
 [![Đoạn mã CSS](Image/1.2.png)](Image/1.2.png)
-
-<div align="center">
-<em>Đoạn mã CSS của trang web https://react.dev</em>
-</div> <br>
+<div align="center"><em>Đoạn mã CSS của trang web https://react.dev</em></div> <br>
 
 [![Đoạn mã JavaScript](Image/1.3.png)](Image/1.3.png)
+<div align="center"><em>Đoạn mã JavaScript của trang web https://react.dev</em></div> 
 
-<div align="center">
-<em>Đoạn mã JavaScript của trang web https://react.dev</em>
-</div> 
-
-Không thể biết chính xác lập trình viên đã sử dụng ngôn ngữ nào ở phía Server chỉ bằng cách xem mã nguồn trình duyệt. Lý do:
-
-1. Cơ chế hoạt động của Web (Mô hình Client-Server):
-
-Trình duyệt (Client) chỉ có khả năng hiểu và hiển thị 3 thành phần: HTML, CSS và JavaScript. Khi bạn truy cập một trang web, Server sẽ xử lý các logic phức tạp (bằng các ngôn ngữ như Java, C#, PHP, Python, Node.js...) sau đó kết quả trả về cho trình duyệt chỉ là HTML, CSS và JavaScript để hiển thị cho người dùng.
-
-2. Tính bảo mật:
-
-Mã nguồn phía Server (Backend code) chứa các logic nghiệp vụ quan trọng và kết nối cơ sở dữ liệu. Mã này nằm tuyệt đối trên máy chủ và không bao giờ được gửi xuống máy khách (trình duyệt). Do đó, chức năng "View Source" của trình duyệt chỉ cho thấy "kết quả" chứ không cho thấy "nguyên liệu" gốc.
+> **Trả lời:** Không thể biết chính xác lập trình viên đã sử dụng ngôn ngữ nào ở phía Server chỉ bằng cách xem mã nguồn trình duyệt.
+>
+> **Lý do:**
+> 1.  **Cơ chế hoạt động của Web (Mô hình Client-Server):** Trình duyệt (Client) chỉ có khả năng hiểu và hiển thị 3 thành phần: HTML, CSS và JavaScript. Khi bạn truy cập một trang web, Server sẽ xử lý các logic phức tạp (bằng các ngôn ngữ như Java, C#, PHP, Python, Node.js...) sau đó kết quả trả về cho trình duyệt chỉ là HTML, CSS và JavaScript để hiển thị cho người dùng.
+> 2.  **Tính bảo mật:** Mã nguồn phía Server (Backend code) chứa các logic nghiệp vụ quan trọng và kết nối cơ sở dữ liệu. Mã này nằm tuyệt đối trên máy chủ và không bao giờ được gửi xuống máy khách (trình duyệt). Do đó, chức năng "View Source" của trình duyệt chỉ cho thấy "kết quả" chứ không cho thấy "nguyên liệu" gốc.
 
 <b>Câu 1.3 Phát biểu nào không đúng khi nói về web, trang web và website?</b> <br>
 A. Web là hệ thống thông tin toàn cầu <br>
@@ -70,60 +56,52 @@ C. Website và ứng dụng web hoạt động dựa trên mô hình client-serv
 
 > *Giải thích: HTML và CSS chỉ tạo ra được giao diện tĩnh (Static Website). Để tạo ra "Ứng dụng web" (Web App) có khả năng tương tác, xử lý logic và dữ liệu người dùng, bắt buộc phải có ngôn ngữ lập trình (như JavaScript, PHP, Java...) và cơ sở dữ liệu.*
 
+---
+
 # Chương 2. Tổng quan về phát triển ứng dụng web
 
 ## 2.3. Bài tập
 
-<b>Bài 2.1 Tìm trang (web) chủ của các CMS trong lĩnh vực phát triển ứng dụng web.
+<b>Bài 2.1 Tìm trang (web) chủ của các CMS trong lĩnh vực phát triển ứng dụng web.</b>
 
-- Thương mại điện tử/bán hàng: WordPress, Wix, Joomla, Drupal, Magento, Shopify 
+| Tên CMS   | Trang chủ (Website) | Ghi chú |
+| :--- | :--- | :--- |
+| **WordPress** | [wordpress.org](https://wordpress.org/) <br> [wordpress.com](https://wordpress.com/) | .org là mã nguồn mở (tự cài đặt). <br> .com là dịch vụ lưu trữ sẵn. |
+| **Wix** | [wix.com](https://www.wix.com/) | Nền tảng kéo thả (Drag & Drop). |
+| **Joomla** | [joomla.org](https://www.joomla.org/) | |
+| **Drupal** | [drupal.org](https://www.drupal.org/) | |
+| **Magento** | [Magento Commerce](https://business.adobe.com/products/magento/magento-commerce.html) | Đã thuộc về Adobe Commerce. |
+| **Shopify** | [shopify.com](https://www.shopify.com/) | Chuyên TMĐT (SaaS). |
+| **Moodle** | [moodle.org](https://moodle.org/) | CMS chuyên về giáo dục (LMS). |
+| **Blogger** | [blogger.com](https://www.blogger.com/) | |
 
-- Hệ thống quản lý học tập: Moodle
+<b>Bài 2.2 Tìm các trang (web) chủ của các framework và thư viện hỗ trợ trong việc phát triển ứng dụng web.</b>
 
-- Blogs, thông tin, giới thiệu: Blogger, Wordpress</b>
+**1. Frontend (Giao diện người dùng)**
 
-| Tên CMS   | Trang chủ (Website)                                                                 | Ghi chú                                   |
-|-----------|--------------------------------------------------------------------------------------|-------------------------------------------|
-| WordPress | [wordpress.org](https://wordpress.org/) <br> [wordpress.com](https://wordpress.com/) | .org là mã nguồn mở (tự cài đặt). <br> .com là dịch vụ lưu trữ sẵn. |
-| Wix       | [wix.com](https://www.wix.com/)                                                     |                                           |
-| Joomla    | [joomla.org](https://www.joomla.org/)                                               |                                           |
-| Drupal    | [drupal.org](https://www.drupal.org/)                                               |                                           |
-| Magento   | [Magento Commerce](https://business.adobe.com/products/magento/magento-commerce.html) | Đã thuộc về Adobe Commerce.               |
-| Shopify   | [shopify.com](https://www.shopify.com/)                                             |                                           |
-| Moodle    | [moodle.org](https://moodle.org/)                                                   | CMS chuyên về giáo dục (LMS).             |
-| Blogger   | [blogger.com](https://www.blogger.com/)                                             |                                           |
+| Tên Framework / Thư viện | Trang chủ |
+| :--- | :--- |
+| **jQuery** | [jquery.com](https://jquery.com/) |
+| **Bootstrap** | [getbootstrap.com](https://getbootstrap.com/) |
+| **D3 (D3.js)** | [d3js.org](https://d3js.org/) |
+| **React** | [react.dev](https://react.dev/) |
+| **Angular** | [angular.dev](https://angular.dev/) <br> [angular.io](https://angular.io/) |
+| **Vue (Vue.js)** | [vuejs.org](https://vuejs.org/) |
+| **Svelte** | [svelte.dev](https://svelte.dev/) |
 
-<b>Bài 2.2 Tìm các trang (web) chủ của các framework và thư viện hỗ trợ trong việc phát triển ứng dụng web.
+**2. Backend (Xử lý phía máy chủ)**
 
-- Frontend: jQuery, Bootstrap, D3, React, Angular, Vue, Svelte 
-
-- Backend: Express.js (Nodejs), Django, Flask (Python), ASP.NET (C#), Spring Boot (Java), Laravel (PHP), Ruby on Rails (Ruby), Gin, Echo (Go, Golang).</b>
-
-1. Frontend (Giao diện người dùng)
-
-| Tên Framework / Thư viện | Trang chủ                                                                 |
-|---------------------------|---------------------------------------------------------------------------|
-| jQuery                    | [jquery.com](https://jquery.com/)                                        |
-| Bootstrap                 | [getbootstrap.com](https://getbootstrap.com/)                            |
-| D3 (D3.js)                | [d3js.org](https://d3js.org/)                                            |
-| React                     | [react.dev](https://react.dev/)                                          |
-| Angular                   | [angular.dev](https://angular.dev/) <br> [angular.io](https://angular.io/) |
-| Vue (Vue.js)              | [vuejs.org](https://vuejs.org/)                                          |
-| Svelte                    | [svelte.dev](https://svelte.dev/)                                        |
-
-2. Backend (Xử lý phía máy chủ)
-
-| Tên Framework   | Ngôn ngữ     | Trang chủ                                                                 |
-|-----------------|--------------|---------------------------------------------------------------------------|
-| Express.js      | Node.js      | [expressjs.com](https://expressjs.com/)                                   |
-| Django          | Python       | [djangoproject.com](https://www.djangoproject.com/)                       |
-| Flask           | Python       | [flask.palletsprojects.com](https://flask.palletsprojects.com/)           |
-| ASP.NET         | C#           | [ASP.NET](https://dotnet.microsoft.com/apps/aspnet)                       |
-| Spring Boot     | Java         | [spring.io](https://spring.io/projects/spring-boot)                       |
-| Laravel         | PHP          | [laravel.com](https://laravel.com/)                                       |
-| Ruby on Rails   | Ruby         | [rubyonrails.org](https://rubyonrails.org/)                               |
-| Gin             | Go (Golang)  | [gin-gonic.com](https://gin-gonic.com/)                                   |
-| Echo            | Go (Golang)  | [echo.labstack.com](https://echo.labstack.com/)                           |
+| Tên Framework | Ngôn ngữ | Trang chủ |
+| :--- | :--- | :--- |
+| **Express.js** | Node.js | [expressjs.com](https://expressjs.com/) |
+| **Django** | Python | [djangoproject.com](https://www.djangoproject.com/) |
+| **Flask** | Python | [flask.palletsprojects.com](https://flask.palletsprojects.com/) |
+| **ASP.NET** | C# | [dotnet.microsoft.com](https://dotnet.microsoft.com/apps/aspnet) |
+| **Spring Boot** | Java | [spring.io](https://spring.io/projects/spring-boot) |
+| **Laravel** | PHP | [laravel.com](https://laravel.com/) |
+| **Ruby on Rails** | Ruby | [rubyonrails.org](https://rubyonrails.org/) |
+| **Gin** | Go (Golang) | [gin-gonic.com](https://gin-gonic.com/) |
+| **Echo** | Go (Golang) | [echo.labstack.com](https://echo.labstack.com/) |
 
 <b>Câu 2.3 Có 3 cách để tạo ra một ứng dụng web? Phát biểu nào không đúng?</b> <br>
 A. Sử dụng CMS <br>
@@ -149,353 +127,225 @@ D. Dễ dàng bảo trì và mở rộng
 
 > *Giải thích: Framework thường cung cấp các lớp bảo mật mặc định để chống lại các lỗi phổ biến (như SQL Injection, XSS, CSRF). Do đó, sử dụng Framework đúng cách sẽ giúp tăng cường bảo mật chứ không phải làm giảm đi.*
 
+---
+
 # Chương 3. Web server
 
 ## 3.3 Bài tập
 
-### Bài 3.1 Thực hành lại các cài đặt trong bài học.
+<b>Bài 3.1 Thực hành lại các cài đặt trong bài học.</b>
 
-Cài đặt nginx
-
+* **Cài đặt Nginx:**
 [![Thư mục cài đặt nginx](Image/3.1.png)](Image/3.1.png)
 
-Nếu chạy được Nginx, mở Task Manager của Windows, chọn tab Processes, sẽ thấy tiến trình nginx. Trong Task Manager, chọn tab Details sẽ thấy 2 tiến trình của Nginx (master process và worker process).
-
+* **Kiểm tra tiến trình trong Task Manager:**
 [![Nginx trong Task Manager](Image/3.2.png)](Image/3.2.png)
 
-Một số lệnh của Nginx
-
+* **Một số lệnh của Nginx:**
 [![Một số lệnh của Nginx](Image/3.3.png)](Image/3.3.png)
 
-Tắt nginx, hiển thị trong TaskManager là trống không
-
+* **Tắt Nginx:**
 [![Tắt nginx](Image/3.4.png)](Image/3.4.png)
 
-Web server sử dụng nginx 
-
+* **Web server sử dụng Nginx:**
 [![Sử dụng nginx làm web server](Image/3.5.png)](Image/3.5.png)
 
-Khi đổi cổng kết nối sang 9000
-
+* **Đổi cổng kết nối:**
 [![Đổi cổng kết nối](Image/3.6.png)](Image/3.6.png)
-
-Khắc phục lỗi cổng kết nối 9000
-
 [![Khắc phục lỗi](Image/3.7.png)](Image/3.7.png)
 
-Thay đổi nội dung của trang web
-
+* **Thay đổi nội dung trang web:**
 [![Thay đổi nội dung](Image/3.8.png)](Image/3.8.png)
 
-<b>Câu 3.2 Một số phần mềm web server phổ biến. Phát biểu nào không đúng?</b>
-
-A. Apache
-
-B. Nginx
-
-<mark>C. SSI</mark>
-
+<b>Câu 3.2 Một số phần mềm web server phổ biến. Phát biểu nào không đúng?</b> <br>
+A. Apache <br>
+B. Nginx <br>
+<mark>C. SSI</mark> <br>
 D. Nodejs
 
-<b>Câu 3.3 Các chức năng của Web server là gì. Phát biểu nào không đúng?</b>
-
-A. Lưu trữ các tập tin của ứng dụng web
-
-B. Nhận request từ client
-
-C. Xử lý request
-
+<b>Câu 3.3 Các chức năng của Web server là gì. Phát biểu nào không đúng?</b> <br>
+A. Lưu trữ các tập tin của ứng dụng web <br>
+B. Nhận request từ client <br>
+C. Xử lý request <br>
 <mark>D. Nhận response từ máy client</mark>
 
-Bài tập 3.4 Thực hiện một số cấu hình cho Nginx:
+<b>Bài tập 3.4 Thực hiện một số cấu hình cho Nginx:</b>
 
-- (a) Lắng nghe trên cổng 65535
+* (a) Lắng nghe trên cổng 65535
+* (b) Trỏ web root về một thư mục khác ổ đĩa `C:\` (ví dụ: `D:\TeoShop`)
+* (c) Tạo tập tin `index.py` để kiểm tra tập tin mặc định.
+* **(d) Lắng nghe trên cổng 65536 được không? Tại sao?**
 
-- (b) Trỏ web root về một thư mục khác ổ đĩa C:\ (ví dụ: D:\TeoShop)
+> **Trả lời:** Cổng mạng (port) trong giao thức TCP/UDP được định danh bằng 16-bit, có giá trị từ **0 đến 65535**. Vì vậy, cổng **65536** vượt qua phạm vi hợp lệ và sẽ không thể sử dụng được.
 
-- (c) Khi client gửi request tới web root, tập tin mặc định trả về là index.py, tạo thêm tập tin index.py để kiểm tra.
+[![Ảnh minh họa lỗi cổng](Image/3.9.png)](Image/3.9.png)
 
-- (d) Lắng nghe trên cổng 65536 được không? Tại sao
-
-Cổng mạng (port) có giá trị từ 0 đến 65535. Vì vậy, cổng 65536 vượt qua phạm vi hợp lệ của cổng TCP/UDP và sẽ không thể sử dụng được. Các cổng hợp lệ phải trong phạm vi 0-65535.
-
-[![Ảnh](Image/3.9.png)](Image/3.9.png)
+---
 
 # Chương 4. Ứng dụng web bán hàng
 
-Bài tập 4.1 Thực hành các cài đặt trong bài học.
+<b>Bài tập 4.1 Thực hành các cài đặt trong bài học.</b>
 
-Kiểm tra phiên bản git
-
+* **Kiểm tra phiên bản Git:**
 [![Ảnh](Image/4.1.png)](Image/4.1.png)
 
-Cài đặt git vào thư mục dự án
-
+* **Cài đặt Git vào thư mục dự án:**
 [![Ảnh](Image/4.2.png)](Image/4.2.png)
 
-4.2 Lệnh nào được sử dụng để nhúng Git vào thư mục dự án?
-
-<mark>A. git init</mark>
-
-B. git --init
-
-C. git initialize
-
+<b>Câu 4.2 Lệnh nào được sử dụng để nhúng Git vào thư mục dự án?</b> <br>
+<mark>A. git init</mark> <br>
+B. git --init <br>
+C. git initialize <br>
 D. git embed
 
-4.3 Lệnh nào sử dụng để kiểm tra trên máy tính đã có phần mềm Git hay chưa?
-
-A. git ver
-
-B. git version
-
-<mark>C. git --version hoặc git -v</mark>
-
+<b>Câu 4.3 Lệnh nào sử dụng để kiểm tra trên máy tính đã có phần mềm Git hay chưa?</b> <br>
+A. git ver <br>
+B. git version <br>
+<mark>C. git --version hoặc git -v</mark> <br>
 D. git --ver
 
-4.4 Trong Git, kho lưu trữ (repo, repository) là gì?
-
-A. Là thư mục dự án
-
-<mark>B. Là thư mục dự án đã được nhúng Git</mark>
-
-C. Là thư mục cài đặt phần mềm Git
-
+<b>Câu 4.4 Trong Git, kho lưu trữ (repo, repository) là gì?</b> <br>
+A. Là thư mục dự án <br>
+<mark>B. Là thư mục dự án đã được nhúng Git</mark> <br>
+C. Là thư mục cài đặt phần mềm Git <br>
 D. Là thư mục .git (trong thư mục dự án)
 
-4.5 Bạn có thể sử dụng các công cụ sau để viết mã. Phát biểu nào không đúng?
+<b>Câu 4.5 Bạn có thể sử dụng các công cụ sau để viết mã. Phát biểu nào không đúng?</b> <br>
+A. Text editor <br>
+<mark>B. MS Word</mark> <br>
+C. IDE, Code Editor <br>
+D. Chatbot (Gemini), Trang web (https://codepen.io/)
 
-A. Text editor
-
-<mark>B. MS Word</mark>
-
-C. IDE, Code Editor
-
-D. Chatbot (Gemini), Trang web (https://codepen.io/) 
+---
 
 # Chương 5. Nodejs và NPM
 
-Bài tập 5.1 Tải và cài đặt Nodejs, NPM trên máy tính. Kiểm tra để đảm bảo Nodejs và NPM sẵn sàng sử dụng.
-
+<b>Bài tập 5.1 Tải và cài đặt Nodejs, NPM trên máy tính. Kiểm tra để đảm bảo Nodejs và NPM sẵn sàng sử dụng.</b>
 [![Ảnh](Image/5.1.png)](Image/5.1.png)
 
-Câu 5.2 Nodejs là gì? Phát biểu nào không đúng?
-
-A. Nodejs là môi trường phát triển ứng dụng
-
-<mark>B. Nodejs là một ngôn ngữ lập trình</mark>
-
-C. Nodejs là nền tảng phát triển ứng dụng
-
+<b>Câu 5.2 Nodejs là gì? Phát biểu nào không đúng?</b> <br>
+A. Nodejs là môi trường phát triển ứng dụng <br>
+<mark>B. Nodejs là một ngôn ngữ lập trình</mark> <br>
+C. Nodejs là nền tảng phát triển ứng dụng <br>
 D. Có thể sử dụng Nodejs để tạo web server
 
-Câu 5.3 NPM là gì? Phát biểu nào không đúng?
-
-A. NPM là viết tắt của Node Package Manager
-
-B. NPM là công cụ để quản lý các thư viện dùng trong một ứng dụng chạy trên nền Nodejs
-
-C. NPM được cài đặt mặc định khi cài đặt Nodejs
-
+<b>Câu 5.3 NPM là gì? Phát biểu nào không đúng?</b> <br>
+A. NPM là viết tắt của Node Package Manager <br>
+B. NPM là công cụ để quản lý các thư viện dùng trong một ứng dụng chạy trên nền Nodejs <br>
+C. NPM được cài đặt mặc định khi cài đặt Nodejs <br>
 <mark>D. NPM gồm 3 thành phần: website, GUI và registry</mark>
+
+---
 
 # Chương 6. Cấu hình Web server trong Nodejs
 
-Bài tập 6.1 Thực hiện các cài đặt, cấu hình trong bài học.
+<b>Bài tập 6.1 Thực hiện các cài đặt, cấu hình trong bài học.</b>
 
-Package.json
+* **Package.json:** [![Thêm package.json](Image/6.1.png)](Image/6.1.png)
+* **Cài đặt PNPM:** [![Cài đặt PNPM](Image/6.2.png)](Image/6.2.png)
+* **Chạy tập tin index.js:** [![Chạy index.js](Image/6.3.png)](Image/6.3.png)
+* **Cài đặt Nodemon:** [![Cài đặt Nodemon](Image/6.4.png)](Image/6.4.png)
+* **Sử dụng Nodemon:** [![Sử dụng Nodemon](Image/6.5.png)](Image/6.5.png)
 
-[![Thêm package.json](Image/6.1.png)](Image/6.1.png)
+> *Link tài liệu thực hành: [Click here](https://drive.google.com/drive/u/2/folders/1SLn_8MV9Wh72W1Ja0-DV2bNh-S3l0Nmv)*
 
-Cài đặt PNPM
+<b>Bài tập 6.2 Làm sao biết được một gói cài đặt ở chế độ cục bộ (locally) hay toàn cục (globally)? Khi cài đặt các gói (package) ở chế độ cục bộ và toàn cục (globally) thì các gói sẽ được lưu ở đâu? Làm sao bạn biết được?</b>
 
-[![Cài đặt PNPM](Image/6.2.png)](Image/6.2.png)
+> **1. Cài đặt gói ở chế độ cục bộ (local)**
+> * **Lệnh:** `npm install <tên-gói>`
+> * **Nơi lưu:** Trong thư mục `node_modules` của chính dự án.
+> * **Phạm vi:** Chỉ dùng được trong dự án đó (ví dụ: `express`, `mongoose`).
+> * **Cách kiểm tra:** Xem thư mục `node_modules` hoặc gõ `npm list <tên-gói>`.
 
-Chạy tập tin index.js
+> **2. Cài đặt gói ở chế độ toàn cục (global)**
+> * **Lệnh:** `npm install -g <tên-gói>`
+> * **Nơi lưu:** Thư mục hệ thống (Windows: `AppData`, Mac/Linux: `/usr/local/lib`).
+> * **Phạm vi:** Dùng chung cho mọi dự án (thường là công cụ CLI như `nodemon`, `npm`, `pnpm`).
+> * **Cách kiểm tra:** Gõ `npm list -g <tên-gói>` hoặc `where <tên-gói>`.
 
-[![Chạy index.js](Image/6.3.png)](Image/6.3.png)
+<b>Bài tập 6.3 Sự khác nhau khi cài đặt gói ở chế độ dependencies và devDependencies?</b>
 
-Cài đặt Nodemon
+| Đặc điểm | dependencies | devDependencies |
+| :--- | :--- | :--- |
+| **Mục đích** | Các gói cần thiết để ứng dụng hoạt động **thực tế** (Production). | Các gói chỉ phục vụ cho quá trình **phát triển** (Development). |
+| **Lệnh cài** | `npm install <tên-gói>` | `npm install <tên-gói> --save-dev` |
+| **Ví dụ** | `express`, `react`, `axios`. | `nodemon`, `jest`, `eslint`. |
+| **Vai trò** | Nếu thiếu, ứng dụng sẽ bị lỗi, không chạy được. | Giúp lập trình viên code nhanh hơn, không cần thiết khi chạy thật. |
 
-[![Cài đặt Nodemon](Image/6.4.png)](Image/6.4.png)
-
-Sử dụng Nodemon
-
-[![Sử dụng Nodemon](Image/6.5.png)](Image/6.5.png)
-
-*Link tài liệu thực hành: [Click on me](https://drive.google.com/drive/u/2/folders/1SLn_8MV9Wh72W1Ja0-DV2bNh-S3l0Nmv)*
-
-Bài tập 6.2 Làm sao biết được một gói cài đặt ở chế độ cục bộ (locally) hay toàn cục (globally)? Khi cài đặt các gói (package) ở chế độ cục bộ và toàn cục (globally) thì các gói sẽ được lưu ở đâu? Làm sao bạn biết được?
-
-Trong Node.js, các gói (package) có thể được cài đặt theo hai chế độ là cục bộ (local) và toàn cục (global). Mỗi chế độ có mục đích sử dụng và vị trí lưu trữ khác nhau.
-
-1. Cài đặt gói ở chế độ cục bộ (local)
-
-Gói được cài đặt ở chế độ cục bộ khi sử dụng lệnh:
-
-npm install <tên-gói>
-
-
-Khi cài đặt theo cách này, gói sẽ được lưu trong thư mục node_modules của chính dự án đang làm việc. Gói cục bộ chỉ được sử dụng trong phạm vi dự án đó và thường là các thư viện cần thiết để ứng dụng có thể chạy được, ví dụ như express, mongoose, axios.
-
-Có thể nhận biết gói cài đặt cục bộ bằng cách:
-
-Kiểm tra thư mục node_modules trong dự án
-
-Hoặc sử dụng lệnh:
-
-npm list <tên-gói>
-
-
-2. Cài đặt gói ở chế độ toàn cục (global)
-
-Gói được cài đặt ở chế độ toàn cục khi sử dụng lệnh:
-
-npm install -g <tên-gói>
-
-
-Khi đó, gói sẽ được lưu trong thư mục npm toàn cục của hệ thống (trên Windows thường nằm trong thư mục AppData của người dùng). Các gói cài đặt toàn cục thường là những công cụ dòng lệnh, có thể sử dụng ở bất kỳ thư mục nào, ví dụ như nodemon, npm, pnpm.
-
-Có thể nhận biết gói cài đặt toàn cục bằng cách:
-
-Sử dụng lệnh:
-
-npm list -g <tên-gói>
-
-
-Hoặc kiểm tra vị trí thực thi của lệnh bằng:
-
-where <tên-gói>
-
-Kết luận
-
-Cài đặt cục bộ dùng cho từng dự án cụ thể và được lưu trong thư mục node_modules của dự án, trong khi cài đặt toàn cục dùng cho toàn hệ thống và thường áp dụng cho các công cụ hỗ trợ phát triển. Việc phân biệt hai chế độ giúp quản lý gói hiệu quả và tránh xung đột phiên bản.
-
-
-Bài tập 6.3 Sự khác nhau khi cài đặt gói ở chế độ dependencies và devDependencies?
-
-Trong file package.json của một ứng dụng Node.js, các gói phụ thuộc được chia thành hai nhóm chính là dependencies và devDependencies, mỗi nhóm có vai trò khác nhau.
-
-1. dependencies
-
-dependencies là những gói bắt buộc phải có khi ứng dụng chạy thực tế. Các gói này chứa mã cần thiết để chương trình hoạt động đúng. Nếu thiếu các gói trong dependencies, ứng dụng sẽ không thể chạy hoặc sẽ bị lỗi.
-
-Ví dụ, trong một ứng dụng web Node.js, thư viện express thường được cài đặt vào dependencies vì nó được sử dụng trực tiếp khi server xử lý yêu cầu từ người dùng.
-
-Gói được cài vào dependencies bằng lệnh:
-
-npm install <tên-gói>
-
-2. devDependencies
-
-devDependencies là những gói chỉ phục vụ cho quá trình phát triển, không cần thiết khi ứng dụng chạy trên môi trường thật (production). Các gói này giúp lập trình viên làm việc thuận tiện hơn, như tự động khởi động lại server, kiểm tra lỗi cú pháp, hoặc định dạng mã nguồn.
-
-Ví dụ, nodemon thường được cài vào devDependencies vì nó chỉ hỗ trợ trong lúc lập trình và không cần thiết khi triển khai ứng dụng.
-
-Gói được cài vào devDependencies bằng lệnh:
-
-npm install <tên-gói> --save-dev
-
-Kết luận
-
-Sự khác nhau giữa dependencies và devDependencies nằm ở mục đích sử dụng. dependencies là các thư viện cần thiết để ứng dụng hoạt động, còn devDependencies chỉ phục vụ cho quá trình phát triển. Việc phân loại đúng giúp ứng dụng nhẹ hơn và dễ triển khai hơn trên môi trường thực tế.
-
-Câu 6.4 Trong ứng dụng chạy trên nền Nodejs, tập tin package.json dùng để làm gì? Phát biểu nào không đúng?
-
-A. Chứa thông tin mô tả về ứng dụng
-
-B. Quản lý các phụ thuộc
-
-C. Chỉ ra tập tin JavaScript đầu tiên được thực thi
-
+<b>Câu 6.4 Trong ứng dụng chạy trên nền Nodejs, tập tin package.json dùng để làm gì? Phát biểu nào không đúng?</b> <br>
+A. Chứa thông tin mô tả về ứng dụng <br>
+B. Quản lý các phụ thuộc <br>
+C. Chỉ ra tập tin JavaScript đầu tiên được thực thi <br>
 <mark>D. Chứa mã để tạo giao diện ứng dụng</mark>
 
-Câu 6.5 PNPM là gì? Phát biểu nào không đúng?
-
-A. Giúp tiết kiệm dung lượng đĩa
-
-B. Có thể thay thế hoặc bổ sung cho NPM
-
-C. Là viết tắt của Performant Node Package Manager 
-
+<b>Câu 6.5 PNPM là gì? Phát biểu nào không đúng?</b> <br>
+A. Giúp tiết kiệm dung lượng đĩa <br>
+B. Có thể thay thế hoặc bổ sung cho NPM <br>
+C. Là viết tắt của Performant Node Package Manager <br>
 <mark>D. Không thể thay thế hoặc bổ sung cho NPM</mark>
 
-Câu 6.6 Express trong Node.js được sử dụng để làm gì?
-
-<mark>A. Tạo ứng dụng web và API</mark>
-
-B. Quản lý cơ sở dữ liệu
-
-C. Thiết kế giao diện người dùng
-
+<b>Câu 6.6 Express trong Node.js được sử dụng để làm gì?</b> <br>
+<mark>A. Tạo ứng dụng web và API</mark> <br>
+B. Quản lý cơ sở dữ liệu <br>
+C. Thiết kế giao diện người dùng <br>
 D. Kiểm tra hiệu suất ứng dụng
 
-Câu 6.7 Nodemon trong Node.js được sử dụng để làm gì?
-
-A. Kết nối với cơ sở dữ liệu
-
-B. Tạo giao diện người dùng cho ứng dụng
-
-C. Quản lý các gói phụ thuộc
-
+<b>Câu 6.7 Nodemon trong Node.js được sử dụng để làm gì?</b> <br>
+A. Kết nối với cơ sở dữ liệu <br>
+B. Tạo giao diện người dùng cho ứng dụng <br>
+C. Quản lý các gói phụ thuộc <br>
 <mark>D. Tự động khởi động lại server khi mã thay đổi</mark>
+
+---
 
 # Chương 7. Local và Global, Dependencies và devDependencies
 
-Bài tập 7.1 Thực hiện các cài đặt trong bài học.
+<b>Bài tập 7.1 Thực hiện các cài đặt trong bài học.</b>
 
-Cài đặt một gói theo kiểu cục bộ
-
-[![Package.json cục bộ](Image/7.1.png)](Image/7.1.png)
+* **Cài đặt cục bộ:** 
+[![Package.json cục bộ](Image/7.1.png)](Image/7.1.png) 
 
 [![Express cục bộ](Image/7.2.png)](Image/7.2.png)
 
-Gỡ bỏ một gói cục bộ (express)
-
+* **Gỡ bỏ gói cục bộ:** 
 [![Xóa express](Image/7.3.png)](Image/7.3.png)
 
-Cài đặt một gói theo kiểu toàn cục
-
+* **Cài đặt toàn cục:** 
 [![Nodemon toàn cục](Image/7.4.png)](Image/7.4.png)
 
-Coi vị trí của gói toàn cục
+* **Kiểm tra vị trí gói toàn cục:** [![Global position](Image/7.5.png)](Image/7.5.png)
+* **Xem tất cả gói đã cài:** [![All global files](Image/7.6.png)](Image/7.6.png)
 
-[![Global position](Image/7.5.png)](Image/7.5.png)
+> *Link tài liệu thực hành: [Click here](https://drive.google.com/drive/u/2/folders/1SLn_8MV9Wh72W1Ja0-DV2bNh-S3l0Nmv)*
 
-Coi tất cả các gói đã cài trên máy
-
-[![All global files](Image/7.6.png)](Image/7.6.png)
-
-*Link tài liệu thực hành: [Click on me](https://drive.google.com/drive/u/2/folders/1SLn_8MV9Wh72W1Ja0-DV2bNh-S3l0Nmv)*
-
-<b>Câu 7.2 Trong môi trường phát triển ứng dụng Nodejs, phát biểu nào không đúng khi nói về gói cục bộ?</b>
-A. Gói cục bộ được cài đặt trong thư mục node_modules của dự án
-B. Gói cục bộ chỉ có thể được sử dụng trong dự án mà nó được cài đặt
-C. Gói cục bộ được quản lý thông qua file package.json và có thể sử dụng các phiên bản khác nhau giữa các dự án
+<b>Câu 7.2 Trong môi trường phát triển ứng dụng Nodejs, phát biểu nào không đúng khi nói về gói cục bộ?</b> <br>
+A. Gói cục bộ được cài đặt trong thư mục node_modules của dự án <br>
+B. Gói cục bộ chỉ có thể được sử dụng trong dự án mà nó được cài đặt <br>
+C. Gói cục bộ được quản lý thông qua file package.json và có thể sử dụng các phiên bản khác nhau giữa các dự án <br>
 <mark>D. Gói cục bộ luôn được cài đặt toàn cục trên hệ thống để tất cả các dự án đều có thể truy cập</mark>
 
-> *Giải thích: Đây là đặc điểm của gói toàn cục (Global Package). Gói cục bộ (Local Package) được cài riêng biệt trong từng dự án để tránh xung đột phiên bản (Dependency Hell).*
+> *Giải thích: Đây là đặc điểm của gói toàn cục (Global Package). Gói cục bộ (Local Package) được cài riêng biệt trong từng dự án để tránh xung đột phiên bản.*
 
-<b>Câu 7.3 Trong môi trường phát triển ứng dụng Nodejs, phát biểu nào không đúng khi nói về gói toàn cục?</b>
-<mark>A. Gói toàn cục luôn được liệt kê trong tập tin package.json của dự án</mark>
-B. Gói toàn cục thường được sử dụng cho các công cụ dòng lệnh (CLI) như nodemon
-C. Gói toàn cục được lưu trong thư mục toàn cục của hệ thống và có thể truy cập từ bất kỳ dự án nào
+<b>Câu 7.3 Trong môi trường phát triển ứng dụng Nodejs, phát biểu nào không đúng khi nói về gói toàn cục?</b> <br>
+<mark>A. Gói toàn cục luôn được liệt kê trong tập tin package.json của dự án</mark> <br>
+B. Gói toàn cục thường được sử dụng cho các công cụ dòng lệnh (CLI) như nodemon <br>
+C. Gói toàn cục được lưu trong thư mục toàn cục của hệ thống và có thể truy cập từ bất kỳ dự án nào <br>
 D. Gói toàn cục được cài đặt bằng lệnh npm install -g <package-name>
 
 > *Giải thích: Gói toàn cục được cài đặt vào thư mục hệ thống của máy tính, nó không tự động được thêm vào danh sách dependencies trong file `package.json` của một dự án cụ thể.*
 
-<b>Câu 7.4 Trong môi trường phát triển ứng dụng Nodejs, phát biểu nào không đúng khi nói về kiểu cài đặt dependencies?</b>
-A. Các gói trong dependencies được cài đặt cục bộ trong dự án bằng lệnh npm install <package-name>
-B. Các gói trong dependencies là các phụ thuộc cần thiết để ứng dụng chạy trong môi trường triển khai, sản xuất (production)
-<mark>C. Các gói trong dependencies chỉ được sử dụng trong giai đoạn phát triển và không cần thiết khi triển khai ứng dụng (production)</mark>
+<b>Câu 7.4 Trong môi trường phát triển ứng dụng Nodejs, phát biểu nào không đúng khi nói về kiểu cài đặt dependencies?</b> <br>
+A. Các gói trong dependencies được cài đặt cục bộ trong dự án bằng lệnh npm install <package-name> <br>
+B. Các gói trong dependencies là các phụ thuộc cần thiết để ứng dụng chạy trong môi trường triển khai, sản xuất (production) <br>
+<mark>C. Các gói trong dependencies chỉ được sử dụng trong giai đoạn phát triển và không cần thiết khi triển khai ứng dụng (production)</mark> <br>
 D. Các gói trong dependencies được liệt kê trong tập tin package.json và tự động cài đặt khi chạy npm install
 
 > *Giải thích: Các gói trong `dependencies` là các thư viện bắt buộc phải có để ứng dụng hoạt động (Runtime dependencies), ví dụ như Express, React, Mongoose. Nếu thiếu chúng ở môi trường Production, ứng dụng sẽ lỗi.*
 
-<b>Câu 7.5 Trong môi trường phát triển ứng dụng Nodejs, phát biểu nào không đúng khi nói về kiểu cài đặt devDependencies?</b>
-A. Các gói trong devDependencies được cài đặt bằng lệnh npm install <package-name> --save-dev
-<mark>B. Các gói trong devDependencies là các phụ thuộc cốt lõi để ứng dụng chạy trong môi trường triển khai (production)</mark>
-C. Các gói trong devDependencies chỉ cần thiết trong giai đoạn phát triển hoặc kiểm thử, không cần cho môi trường triển khai (production)
+<b>Câu 7.5 Trong môi trường phát triển ứng dụng Nodejs, phát biểu nào không đúng khi nói về kiểu cài đặt devDependencies?</b> <br>
+A. Các gói trong devDependencies được cài đặt bằng lệnh npm install <package-name> --save-dev <br>
+<mark>B. Các gói trong devDependencies là các phụ thuộc cốt lõi để ứng dụng chạy trong môi trường triển khai (production)</mark> <br>
+C. Các gói trong devDependencies chỉ cần thiết trong giai đoạn phát triển hoặc kiểm thử, không cần cho môi trường triển khai (production) <br>
 D. Các gói trong devDependencies không được cài đặt khi chạy npm install --production
 
 > *Giải thích: `devDependencies` chỉ chứa các công cụ hỗ trợ quá trình phát triển (như Nodemon, Jest, ESLint). Khi deploy lên Production, để tối ưu hiệu năng và dung lượng, ta thường bỏ qua các gói này.*
