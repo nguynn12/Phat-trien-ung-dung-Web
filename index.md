@@ -1,13 +1,3 @@
-<style>
-   .chia {
-      display: flex;
-      gap: 20px;
-   }
-   .cot {
-      flex: 1;
-   }
-</style>
-
 # Chương 1. Một số khái niệm
 
 ## 1.5. Bài tập
@@ -56,7 +46,7 @@ C. Website và ứng dụng web hoạt động dựa trên mô hình client-serv
 
 > *Giải thích: HTML và CSS chỉ tạo ra được giao diện tĩnh (Static Website). Để tạo ra "Ứng dụng web" (Web App) có khả năng tương tác, xử lý logic và dữ liệu người dùng, bắt buộc phải có ngôn ngữ lập trình (như JavaScript, PHP, Java...) và cơ sở dữ liệu.*
 
----
+
 
 # Chương 2. Tổng quan về phát triển ứng dụng web
 
@@ -127,7 +117,7 @@ D. Dễ dàng bảo trì và mở rộng
 
 > *Giải thích: Framework thường cung cấp các lớp bảo mật mặc định để chống lại các lỗi phổ biến (như SQL Injection, XSS, CSRF). Do đó, sử dụng Framework đúng cách sẽ giúp tăng cường bảo mật chứ không phải làm giảm đi.*
 
----
+
 
 # Chương 3. Web server
 
@@ -180,7 +170,7 @@ C. Xử lý request <br>
 
 [![Ảnh minh họa lỗi cổng](Image/3.9.png)](Image/3.9.png)
 
----
+
 
 # Chương 4. Ứng dụng web bán hàng
 
@@ -216,7 +206,7 @@ A. Text editor <br>
 C. IDE, Code Editor <br>
 D. Chatbot (Gemini), Trang web (https://codepen.io/)
 
----
+
 
 # Chương 5. Nodejs và NPM
 
@@ -235,7 +225,7 @@ B. NPM là công cụ để quản lý các thư viện dùng trong một ứng 
 C. NPM được cài đặt mặc định khi cài đặt Nodejs <br>
 <mark>D. NPM gồm 3 thành phần: website, GUI và registry</mark>
 
----
+
 
 # Chương 6. Cấu hình Web server trong Nodejs
 
@@ -296,7 +286,7 @@ B. Tạo giao diện người dùng cho ứng dụng <br>
 C. Quản lý các gói phụ thuộc <br>
 <mark>D. Tự động khởi động lại server khi mã thay đổi</mark>
 
----
+
 
 # Chương 7. Local và Global, Dependencies và devDependencies
 
@@ -313,8 +303,11 @@ C. Quản lý các gói phụ thuộc <br>
 * **Cài đặt toàn cục:** 
 [![Nodemon toàn cục](Image/7.4.png)](Image/7.4.png)
 
-* **Kiểm tra vị trí gói toàn cục:** [![Global position](Image/7.5.png)](Image/7.5.png)
-* **Xem tất cả gói đã cài:** [![All global files](Image/7.6.png)](Image/7.6.png)
+* **Kiểm tra vị trí gói toàn cục:** 
+[![Global position](Image/7.5.png)](Image/7.5.png)
+
+* **Xem tất cả gói đã cài:** 
+[![All global files](Image/7.6.png)](Image/7.6.png)
 
 > *Link tài liệu thực hành: [Click here](https://drive.google.com/drive/u/2/folders/1SLn_8MV9Wh72W1Ja0-DV2bNh-S3l0Nmv)*
 
@@ -350,10 +343,108 @@ D. Các gói trong devDependencies không được cài đặt khi chạy npm in
 
 > *Giải thích: `devDependencies` chỉ chứa các công cụ hỗ trợ quá trình phát triển (như Nodemon, Jest, ESLint). Khi deploy lên Production, để tối ưu hiệu năng và dung lượng, ta thường bỏ qua các gói này.*
 
+
+
 # Chương 8. Lập trình đồng bộ, hàm ẩn danh trong JavaScript
+
+<b>Câu 8.2: Lập trình đồng bộ trong JavaScript là gì? Phát biểu nào sau đây không đúng?</b> <br>
+<mark>A. Lập trình đồng bộ không chặn luồng, cho phép các lệnh tiếp theo chạy ngay cả khi tác vụ chưa hoàn tất.</mark> <br>
+B. Các lệnh được thực thi tuần tự, theo thứ tự từ trên xuống dưới. <br>
+C. Mỗi lệnh phải hoàn thành trước khi lệnh tiếp theo được thực thi. <br>
+D. Phù hợp với các tác vụ đơn giản như tính toán cơ bản không cần chờ đợi.
+
+> *Giải thích: Lập trình đồng bộ (Synchronous) hoạt động theo cơ chế "chặn" (blocking). Tức là dòng mã phía sau bắt buộc phải chờ dòng mã phía trước chạy xong hoàn toàn mới được thực thi. Đặc điểm "không chặn luồng" (non-blocking) là tính chất của lập trình bất đồng bộ (Asynchronous).*
+
+<b>Câu 8.3: Hàm ẩn danh (anonymous function) trong JavaScript là gì? Phát biểu nào sau đây không đúng?</b> <br>
+A. Hàm ẩn danh có thể truy cập biến trong phạm vi bao quanh nhờ closure. <br>
+B. Hàm ẩn danh là hàm không có tên khi được định nghĩa. <br>
+C. Hàm ẩn danh thường được gán vào biến hoặc truyền làm tham số cho hàm khác. <br>
+<mark>D. Hàm ẩn danh được "nâng lên" (hoisted) giống như hàm khai báo (function declaration).</mark>
+
+> *Giải thích: Trong JavaScript, chỉ có Hàm khai báo (Function Declaration) mới có tính chất Hoisting (được đưa lên đầu phạm vi khi biên dịch). Hàm ẩn danh (thường được dùng trong Function Expression) không được Hoisted; chúng chỉ được khởi tạo khi trình thông dịch chạy đến dòng code định nghĩa chúng.*
 
 
 
 # Chương 9. Hàm mũi tên, lập trình bất đồng bộ trong JavaScript
 
+<b>Câu 9.2: Hàm mũi tên (arrow function) là gì? Phát biểu nào sau đây không đúng về hàm mũi tên?</b> <br>
+A. Hàm mũi tên có cú pháp ngắn gọn, giúp viết mã dễ đọc hơn. <br>
+<mark>B. Hàm mũi tên có this (ngữ cảnh) riêng, không kế thừa từ phạm vi bên ngoài.</mark> <br>
+C. Hàm mũi tên không thể được dùng làm hàm tạo (constructor). <br>
+D. Hàm mũi tên không có biến arguments để truy cập danh sách tham số.
+
+> *Giải thích: Một trong những đặc điểm quan trọng nhất của Arrow Function là nó không có context `this` của riêng nó. Thay vào đó, nó kế thừa `this` từ phạm vi cha (lexical scoping) nơi nó được khai báo. Điều này khác với Regular Function (hàm thường) vốn có `this` thay đổi tùy theo cách gọi hàm.*
+
+<b>Câu 9.3: Lập trình bất đồng bộ là gì? Phát biểu nào sau đây không đúng về lập trình bất đồng bộ?</b> <br>
+A. Lập trình bất đồng bộ cho phép chương trình thực hiện nhiều tác vụ cùng lúc mà không cần chờ đợi tác vụ trước đó hoàn thành. <br>
+B. Lập trình bất đồng bộ đặc biệt hữu ích khi xử lý các tác vụ tốn thời gian như yêu cầu mạng, đọc/ghi tập tin hoặc tương tác với cơ sở dữ liệu. <br>
+<mark>C. Callback là một kỹ thuật bất đồng bộ, nó sẽ làm cho code dễ đọc và dễ bảo trì hơn khi code có nhiều callback lồng nhau.</mark> <br>
+D. Async/await cho phép viết mã bất đồng bộ trông giống như mã đồng bộ, giúp mã trở nên dễ đọc và dễ hiểu hơn.
+
+> *Giải thích: Khi sử dụng quá nhiều callback lồng nhau, mã nguồn sẽ rơi vào tình trạng "Callback Hell" (địa ngục callback), khiến cấu trúc mã bị phình to sang phải (hình kim tự tháp), rất khó đọc, khó gỡ lỗi và khó bảo trì. Promise và Async/Await sinh ra để khắc phục nhược điểm này.*
+
+
+
 # Chương 10. Hàm callback
+
+<b>Câu 10.2 Hàm callback trong JavaScript là gì? Phát biểu nào sau đây không đúng?</b> <br>
+A. Hàm callback là một hàm được truyền vào một hàm khác như một tham số. <br>
+B. Hàm callback thường được sử dụng để xử lý các tác vụ bất đồng bộ. <br>
+C. Hàm callback có thể là hàm ẩn danh, hàm mũi tên hoặc hàm đã được định nghĩa trước. <br>
+<mark>D. Hàm callback được thực thi ngay lập tức sau khi hàm "cha" bắt đầu thực hiện.</mark>
+
+> *Giải thích: Hàm callback không nhất thiết phải chạy ngay lập tức. Trong các tác vụ bất đồng bộ (như `setTimeout`, gọi API, đọc file), callback chỉ được thực thi **sau khi** tác vụ của hàm cha đã hoàn thành hoặc khi một sự kiện cụ thể xảy ra.*
+
+<b>Câu 10.3 Callback hell trong JavaScript là gì? Phát biểu nào sau đây không đúng?</b> <br>
+A. Callback hell xảy ra khi có quá nhiều hàm callback lồng nhau, khiến mã nguồn khó đọc và bảo trì. <br>
+B. Callback hell thường xuất hiện khi xử lý các tác vụ bất đồng bộ phức tạp. <br>
+<mark>C. Callback hell là một cách hiệu quả để quản lý các tác vụ bất đồng bộ trong JavaScript.</mark> <br>
+D. Callback hell có thể được giải quyết bằng Promise hoặc async/await.
+
+> *Giải thích: Tên gọi "Callback hell" (Địa ngục callback) ám chỉ một vấn đề tiêu cực trong lập trình, nơi cấu trúc mã trở nên rối rắm (hình kim tự tháp) và khó kiểm soát. Đây không phải là một phương pháp hiệu quả, mà là tình trạng cần tránh hoặc cần tái cấu trúc bằng Promise/Async-Await.*
+
+
+
+# Chương 11. Lập trình giao diện
+
+<b>Câu 11.2 Free HTML template là gì? Phát biểu nào sau đây không đúng?</b> <br>
+A. Free HTML template là các mẫu giao diện web được thiết kế sẵn, bao gồm HTML, CSS, và đôi khi JavaScript, được cung cấp miễn phí. <br>
+B. Free HTML template thường có giao diện đẹp, cấu trúc cơ bản (header, footer, sidebar), và phù hợp cho nhiều loại dự án như blog, portfolio, hoặc trang doanh nghiệp nhỏ. <br>
+<mark>C. Sử dụng Free HTML template tốn nhiều thời gian, phù hợp cho các dự án lớn.</mark> <br>
+D. Free HTML template cho phép bạn tùy chỉnh CSS, thay đổi nội dung (văn bản, hình ảnh), tích hợp back-end (như Node.js, PHP).
+
+> *Giải thích: Mục đích chính của việc sử dụng Template là để **tiết kiệm thời gian** thiết kế và dựng khung ban đầu. Đối với các dự án lớn và phức tạp, Template thường không đáp ứng đủ nhu cầu tùy biến sâu, do đó lập trình viên thường tự xây dựng từ đầu (build from scratch).*
+
+<b>Câu 11.3 Static files (tập tin tĩnh) trong Express là gì? Phát biểu nào sau đây không đúng?</b> <br>
+A. Static files là các tập tin không thay đổi nội dung hoặc không cần xử lý logic phía server. <br>
+B. Static files được gửi trực tiếp cho client thông qua middleware express.static. <br>
+C. Mục đích của static files là tối ưu hóa hiệu suất, tổ chức dự án và bảo mật. <br>
+<mark>D. Không nên đặt các static files trong thư mục public.</mark>
+
+> *Giải thích: Trong Express.js, `public` là tên thư mục tiêu chuẩn và được khuyến nghị để chứa các tập tin tĩnh (hình ảnh, CSS, Client-side JS). Chúng ta thường cấu hình bằng lệnh `app.use(express.static('public'))`.*
+
+
+
+# Chương 12. Ứng dụng client-server
+
+
+
+# Chương 13. Lập trình client-server
+
+
+
+# Chương 14. Lập trình hướng sự kiện
+
+
+
+# Chương 15. Event-driven, Route handler và Middleware trong Express
+
+
+
+# Chương 16. Lập trình trang web động
+
+
+
+# Chương 17. Express-handlebars
+
+
