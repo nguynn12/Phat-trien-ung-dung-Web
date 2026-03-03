@@ -427,13 +427,45 @@ C. Mục đích của static files là tối ưu hóa hiệu suất, tổ chức
 
 # Chương 12. Ứng dụng client-server
 
+<b>Câu hỏi 12.1 Ứng dụng cục bộ là gì? Phát biểu nào sau đây không đúng?</b> <br>
+A. Ứng dụng cục bộ chạy trực tiếp trên thiết bị của người dùng mà không cần kết nối liên tục với máy chủ ở xa. <br>
+<mark>B. Ứng dụng cục bộ luôn yêu cầu kết nối internet ổn định để hoạt động hiệu quả.</mark> <br>
+C. Ứng dụng cục bộ có thể truy cập trực tiếp vào các tài nguyên của thiết bị như hệ thống tập tin và phần cứng. <br>
+D. Dữ liệu của ứng dụng cục bộ thường được lưu trữ trên thiết bị của người dùng, giúp tăng cường bảo mật và quyền riêng tư.
+
+> *Giải thích: Ứng dụng cục bộ (Local Application) như Notepad, Calculator hay các phần mềm offline được thiết kế để chạy trên tài nguyên của máy tính mà không phụ thuộc vào mạng. Yêu cầu kết nối Internet liên tục là đặc điểm của ứng dụng web (Web App) hoặc ứng dụng đám mây (Cloud App).*
+
+<b>Câu hỏi 12.2 Ứng dụng kiểu client-server là gì? Phát biểu nào sau đây không đúng?</b> <br>
+A. Client tập trung chủ yếu vào việc hiển thị giao diện người dùng, trong khi server tập trung xử lý logic và dữ liệu. <br>
+B. Giao tiếp giữa client và server thường được thực hiện qua mạng, sử dụng các giao thức như HTTP, WebSocket hoặc TCP/IP. <br>
+<mark>C. Client và server luôn phải chạy trên các thiết bị riêng biệt, không bao giờ có thể cùng chạy trên một máy tính.</mark> <br>
+D. Server có nhiệm vụ nhận yêu cầu từ client, xử lý chúng, và gửi phản hồi lại cho client.
+
+> *Giải thích: Client và Server là hai vai trò logic, không nhất thiết phải là hai thiết bị vật lý tách biệt. Trong quá trình phát triển (development), lập trình viên thường chạy cả Client và Server trên cùng một máy tính (sử dụng `localhost` hoặc `127.0.0.1`).*
+
 
 
 # Chương 13. Lập trình client-server
 
+<b>Câu hỏi 13.2 URL (Uniform Resource Locator) là gì? Phát biểu nào sau đây không đúng?</b> <br>
+A. URL là một địa chỉ duy nhất xác định vị trí của một tài nguyên trên Internet. <br>
+B. URL bao gồm các thành phần như giao thức, tên miền, đường dẫn, truy vấn và phân mảnh. <br>
+C. Phần "truy vấn" (query) trong URL được sử dụng để truyền dữ liệu đến máy chủ thông qua các tham số. <br>
+<mark>D. Giao thức "FTP" là giao thức phổ biến nhất được sử dụng trong URL để truy cập các trang web.</mark>
+
+> *Giải thích: Giao thức phổ biến nhất để truy cập các trang web (Website) là **HTTP** (Hypertext Transfer Protocol) hoặc **HTTPS**. Giao thức **FTP** (File Transfer Protocol) chủ yếu được sử dụng để truyền tải tập tin giữa máy khách và máy chủ.*
+
 
 
 # Chương 14. Lập trình hướng sự kiện
+
+<b>Câu hỏi 14.3 Mô hình lập trình hướng sự kiện trong Node.js là gì? Phát biểu nào sau đây không đúng?</b> <br>
+<mark>A. Event Emitter liên tục kiểm tra hàng đợi sự kiện và thực thi các hàm callback khi có sự kiện xảy ra.</mark> <br>
+B. Event là các hành động hoặc sự thay đổi trạng thái xảy ra trong ứng dụng. <br>
+C. Event Loop liên tục kiểm tra hàng đợi sự kiện và thực thi các hàm callback khi có sự kiện xảy ra. <br>
+D. Event Handler là các hàm được gọi khi một sự kiện xảy ra.
+
+> *Giải thích: **Event Loop** (Vòng lặp sự kiện) mới là thành phần chịu trách nhiệm liên tục kiểm tra hàng đợi sự kiện (Event Queue) và đẩy các callback ra ngăn xếp thực thi (Call Stack). **Event Emitter** chỉ là một class giúp các đối tượng có thể phát ra (emit) và lắng nghe (listen) các sự kiện, nó không tự mình quản lý việc kiểm tra vòng lặp.*
 
 
 
