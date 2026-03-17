@@ -436,7 +436,7 @@ D. Callback hell có thể được giải quyết bằng Promise hoặc async/a
 > *Giải thích: Tên gọi "Callback hell" (Địa ngục callback) ám chỉ một vấn đề tiêu cực trong lập trình, nơi cấu trúc mã trở nên rối rắm (hình kim tự tháp) và khó kiểm soát. Đây không phải là một phương pháp hiệu quả, mà là tình trạng cần tránh hoặc cần tái cấu trúc bằng Promise/Async-Await.*
 
 
-
+ 
 # Chương 11. Lập trình giao diện
 
 <b>Câu 11.2 Free HTML template là gì? Phát biểu nào sau đây không đúng?</b> <br>
