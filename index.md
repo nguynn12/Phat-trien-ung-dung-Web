@@ -347,6 +347,22 @@ D. Các gói trong devDependencies không được cài đặt khi chạy npm in
 
 # Chương 8. Lập trình đồng bộ, hàm ẩn danh trong JavaScript
 
+<b>Bài 8.1 Cài đặt các ví dụ trong bài học.<b>
+
+* **Tính toán căn bản:** 
+[![Tính toán căn bản](Image/8.1.png)](Image/8.1.png) 
+
+* **Vòng lặp đồng bộ:**
+[![Vòng lặp đồng bộ](Image/8.2.png)](Image/8.2.png)
+
+* **Chặn luồng:** 
+[![Chặn luồng](Image/8.3.png)](Image/8.3.png)
+
+* **Hàm ẩn danh:** 
+[![Hàm ẩn danh](Image/8.4.png)](Image/8.4.png)
+
+> *Link tài liệu thực hành: [Click here](https://drive.google.com/drive/u/2/folders/1SLn_8MV9Wh72W1Ja0-DV2bNh-S3l0Nmv)*
+
 <b>Câu 8.2: Lập trình đồng bộ trong JavaScript là gì? Phát biểu nào sau đây không đúng?</b> <br>
 <mark>A. Lập trình đồng bộ không chặn luồng, cho phép các lệnh tiếp theo chạy ngay cả khi tác vụ chưa hoàn tất.</mark> <br>
 B. Các lệnh được thực thi tuần tự, theo thứ tự từ trên xuống dưới. <br>
@@ -366,6 +382,22 @@ C. Hàm ẩn danh thường được gán vào biến hoặc truyền làm tham 
 
 
 # Chương 9. Hàm mũi tên, lập trình bất đồng bộ trong JavaScript
+
+<b>Bài 9.1 Cài đặt các ví dụ trong bài học.<b>
+
+* **Hàm không có tham số:**
+[![Hàm không có tham số](Image/9.1.png)](Image/9.1.png)
+
+* **Hàm có một tham số:**
+[![Hàm có một tham số](Image/9.2.png)](Image/9.2.png)
+
+* **Từ khóa this trong hàm mũi tên:**
+[![Từ khóa this](Image/9.3.png)](Image/9.3.png)
+
+* **Lập trình bất đồng bộ, sử dụng chặn luồng:**
+[![Chặn luồng](Image/9.4.png)](Image/9.4.png)
+
+> *Link tài liệu thực hành: [Click here](https://drive.google.com/drive/u/2/folders/1SLn_8MV9Wh72W1Ja0-DV2bNh-S3l0Nmv)*
 
 <b>Câu 9.2: Hàm mũi tên (arrow function) là gì? Phát biểu nào sau đây không đúng về hàm mũi tên?</b> <br>
 A. Hàm mũi tên có cú pháp ngắn gọn, giúp viết mã dễ đọc hơn. <br>
@@ -480,3 +512,13 @@ D. Event Handler là các hàm được gọi khi một sự kiện xảy ra.
 # Chương 17. Express-handlebars
 
 
+
+# Chương 18. Tạo giao diện các trang con
+
+
+
+# Chương 19. Thiết kế cơ sở dữ liệu
+
+
+
+# Chương 20. Làm việc với Postgresql
