@@ -503,15 +503,69 @@ D. Event Handler là các hàm được gọi khi một sự kiện xảy ra.
 
 # Chương 15. Event-driven, Route handler và Middleware trong Express
 
+<b>Câu hỏi 15.2 Mô hình lập trình hướng sự kiện của Express. Phát biểu nào sau đây không đúng?</b> <br>
+A. Mỗi request từ client (như GET, POST, PUT, DELETE) được xem là một sự kiện (Event). <br>
+B. Các module http, fs, stream là các Bộ quản lý sự kiện (Event Emitter) của Express. <br>
+<mark>C. Express sử dụng Vòng lặp sự kiện (Event Loop) của trình duyệt để lắng nghe và xử lý các sự kiện theo kiểu bất đồng bộ (asynchronous), không chặn luồng (non-blocking).</mark> <br>
+D. Các route handler và middleware đóng vai trò như các Hàm xử lý sự kiện (Event Handler), được gọi khi sự kiện tương ứng xảy ra.
+
+> *Giải thích: Express.js là một framework hoạt động trên môi trường Node.js (phía máy chủ - Server-side), do đó nó sử dụng Event Loop của Node.js chứ không phải Event Loop của trình duyệt (Browser).*
+
+<b>Câu hỏi 15.3 Route handler trong Express là gì? Phát biểu nào sau đây không đúng?</b> <br>
+A. Route handler chỉ được gọi khi request khớp với route và HTTP method đã định nghĩa. <br>
+B. Route handler thường chứa logic nghiệp vụ như truy vấn cơ sở dữ liệu hoặc xử lý dữ liệu. <br>
+C. Route handler có thể chuyển tiếp request sang middleware hoặc handler tiếp theo bằng hàm next(). <br>
+<mark>D. Chỉ có duy nhất một Route handler được gắn vào một route.</mark>
+
+> *Giải thích: Trong Express, bạn hoàn toàn có thể gắn nhiều hơn một Route handler cho một route cụ thể bằng cách truyền vào một mảng hoặc chuỗi các callback function (ví dụ: `app.get('/path', handler1, handler2)`). Các handler này sẽ thực thi tuần tự và dùng hàm `next()` để chuyển quyền điều khiển sang handler kế tiếp.*
+
+<b>Câu hỏi 15.4 Middleware trong Express là gì? Phát biểu nào sau đây không đúng?</b> <br>
+A. Middleware là các hàm được thực thi trong quá trình xử lý một HTTP request, trước hoặc sau Route handler. <br>
+B. Xử lý request (như xác thực, ghi log). <br>
+C. Sửa đổi đối tượng req hoặc res. <br>
+<mark>D. Middleware nhận 2 tham số: req, res.</mark>
+
+> *Giải thích: Một hàm Middleware tiêu chuẩn trong Express bắt buộc phải có ít nhất 3 tham số: `req` (Request), `res` (Response) và `next` (hàm callback để chuyển tiếp sang middleware tiếp theo). Ngoài ra, Middleware xử lý lỗi (Error-handling middleware) còn có 4 tham số là `err`, `req`, `res`, `next`.*
+
 
 
 # Chương 16. Lập trình trang web động
+
+<b>Câu hỏi 16.1 Trang web động là gì. Phát biểu nào sau đây KHÔNG ĐÚNG?</b> <br>
+A. Nội dung hiển thị có thể khác nhau tùy thuộc vào người dùng truy cập. <br>
+<mark>B. Nội dung trang web luôn cố định và không thay đổi theo thời gian.</mark> <br>
+C. Giao diện có khả năng cập nhật một phần mà không cần tải lại toàn bộ trang. <br>
+D. Trang web có thể tương tác với người dùng theo thời gian thực.
+
+> *Giải thích: "Nội dung trang web luôn cố định và không thay đổi theo thời gian" là định nghĩa của Trang web tĩnh (Static Website) chỉ được viết bằng HTML/CSS thuần. Trang web động (Dynamic Website) có khả năng thay đổi nội dung linh hoạt dựa trên dữ liệu từ Database, thời gian, hoặc tương tác của từng người dùng cụ thể.*
+
+<b>Câu hỏi 16.2 Ưu điểm của SSR (Server-Side Rendering) là gì? Phát biểu nào dưới đây KHÔNG đúng?</b> <br>
+A. Tối ưu hóa SEO vì các công cụ tìm kiếm có thể thu thập và lập chỉ mục nội dung dễ dàng hơn nhờ nội dung đầy đủ trong mã HTML. <br>
+B. Tăng tốc độ tải trang ban đầu, giúp người dùng thấy nội dung nhanh hơn, đặc biệt trên thiết bị di động hoặc mạng chậm. <br>
+C. Hỗ trợ tốt cho thiết bị cấu hình yếu bằng cách giảm tải việc thực thi JavaScript trên thiết bị. <br>
+<mark>D. Loại bỏ hoàn toàn sự phụ thuộc vào JavaScript để hiển thị nội dung trang web.</mark>
+
+> *Giải thích: SSR giúp hiển thị cấu trúc HTML ban đầu rất nhanh từ máy chủ, nhưng nó KHÔNG loại bỏ hoàn toàn JavaScript. Để trang web có thể thực sự tương tác được (như bấm nút, mở menu dropdown, gửi form không tải lại trang...), trình duyệt vẫn cần phải tải và thực thi các tệp JavaScript (quá trình này thường được gọi là Hydration).*
+
+<b>Câu hỏi 16.3 Nhược điểm của CSR (Client-Side Rendering) là gì? Phát biểu nào dưới đây KHÔNG đúng?</b> <br>
+<mark>A. CSR luôn tiêu tốn nhiều tài nguyên server hơn so với SSR để hiển thị nội dung trang web.</mark> <br>
+B. SEO không tốt vì các công cụ tìm kiếm có thể gặp khó khăn trong việc thu thập và lập chỉ mục nội dung được tạo bởi JavaScript. <br>
+C. Tốc độ tải trang ban đầu chậm do người dùng phải chờ trình duyệt tải và thực thi tập tin JavaScript trước khi thấy nội dung. <br>
+D. Yêu cầu thiết bị người dùng phải mạnh để xử lý tốt các tác vụ JavaScript.
+
+> *Giải thích: Khẳng định A bị ngược. CSR (Client-Side Rendering) giúp **giảm tải** cho Server vì Server chỉ cần trả về một tệp HTML gần như trống rỗng cùng với các tệp JavaScript/JSON. Việc tính toán và vẽ (render) giao diện được đẩy hết sang máy của người dùng (Client). Ngược lại, SSR mới là mô hình tiêu tốn nhiều CPU và tài nguyên của Server hơn vì Server phải đảm nhận việc tạo ra toàn bộ mã HTML cho mỗi request.*
 
 
 
 # Chương 17. Express-handlebars
 
+<b>Câu hỏi 17.1 Express-handlebars là một _________được tích hợp vào framework Express để tạo ra “HTML động” từ phía server.</b> <br>
+A. client-side template engine <br>
+B. server-side template machine <br>
+C. server-site template engine <br>
+<mark>D. server-side template engine</mark>
 
+> *Giải thích: Express-handlebars là một "template engine" (công cụ xử lý mẫu) hoạt động ở phía máy chủ (server-side). Nhiệm vụ của nó là kết hợp dữ liệu từ backend (Node.js/Express) với các file giao diện (.handlebars) để tạo ra mã HTML hoàn chỉnh trước khi gửi trả về cho trình duyệt (client). Các đáp án khác bị sai về thuật ngữ ("machine", "site") hoặc sai môi trường hoạt động ("client-side").*
 
 # Chương 18. Tạo giao diện các trang con
 
@@ -519,6 +573,40 @@ D. Event Handler là các hàm được gọi khi một sự kiện xảy ra.
 
 # Chương 19. Thiết kế cơ sở dữ liệu
 
+<b>Câu hỏi 19.1 Kiểu dữ liệu VARCHAR trong thiết kế dữ liệu là gì? Phát biểu nào sau đây không đúng?</b> <br>
+<mark>A. VARCHAR luôn chiếm một lượng bộ nhớ cố định, bằng với độ dài tối đa đã khai báo.</mark> <br>
+B. VARCHAR là kiểu dữ liệu chuỗi ký tự có độ dài thay đổi. <br>
+C. VARCHAR(n) định nghĩa một chuỗi ký tự có độ dài tối đa là 'n' ký tự. <br>
+D. VARCHAR giúp tiết kiệm không gian lưu trữ so với kiểu CHAR khi độ dài chuỗi thực tế nhỏ hơn độ dài tối đa.
 
+> *Giải thích: Đặc điểm của VARCHAR (Variable Character) là nó chỉ cấp phát bộ nhớ dựa trên số lượng ký tự thực tế cộng thêm 1 hoặc 2 byte để lưu thông tin về độ dài chuỗi, do đó dung lượng thay đổi linh hoạt. Kiểu dữ liệu luôn chiếm một lượng bộ nhớ cố định, bất chấp chuỗi thực tế ngắn hơn khai báo, là kiểu CHAR.*
+
+<b>Câu hỏi 19.2 Các mối quan hệ giữa các bảng trong thiết kế dữ liệu thường bao gồm những kiểu nào? Phát biểu nào sau đây không đúng?</b> <br>
+A. Mối quan hệ một-một (1-1), trong đó một bản ghi ở bảng này liên kết với tối đa một bản ghi ở bảng kia và ngược lại. <br>
+B. Mối quan hệ một-nhiều (1-N), trong đó một bản ghi ở bảng này có thể liên kết với nhiều bản ghi ở bảng kia, nhưng một bản ghi ở bảng kia chỉ có thể liên kết với một bản ghi ở bảng này. <br>
+C. Mối quan hệ nhiều-nhiều (N-N), trong đó nhiều bản ghi ở bảng này có thể liên kết với nhiều bản ghi ở bảng kia và ngược lại, thường được giải quyết bằng bảng trung gian. <br>
+<mark>D. Mối quan hệ không-một (0-1), trong đó một bản ghi ở bảng này có thể không liên kết hoặc liên kết với tối đa một bản ghi ở bảng kia. Đây là một kiểu quan hệ cơ bản thường được nhắc đến trong mọi mô hình dữ liệu.</mark>
+
+> *Giải thích: Trong lý thuyết cơ sở dữ liệu quan hệ (Relational Database), 3 loại mối quan hệ cơ bản (Relationship Types) được công nhận là: 1-1 (One-to-One), 1-N (One-to-Many) và N-N (Many-to-Many). Yếu tố "Không" (0) hoặc "Một" (1) thực chất là để chỉ tính bắt buộc hay tùy chọn (Optionality/Cardinality limits) của một thực thể tham gia vào mối quan hệ, chứ không phải là một "kiểu quan hệ cơ bản" độc lập.*
 
 # Chương 20. Làm việc với Postgresql
+
+<b>Câu hỏi 20.1 Postgresql là gì? Phát biểu nào sau đây không đúng?</b> <br>
+A. Postgresql là một hệ quản trị cơ sở dữ liệu quan hệ (RDBMS) mã nguồn mở, mạnh mẽ và đáng tin cậy. <br>
+<mark>B. Postgresql là một cơ sở dữ liệu mã nguồn mở.</mark> <br>
+C. Postgresql tuân thủ chuẩn SQL và hỗ trợ đầy đủ các thuộc tính ACID cho giao dịch. <br>
+D. Postgresql hỗ trợ nhiều kiểu dữ liệu đa dạng, bao gồm JSON/JSONB, ARRAY và dữ liệu địa lý (PostGIS).
+
+> *Giải thích: Xét về mặt thuật ngữ chuyên ngành cốt lõi, phát biểu B là thiếu chính xác nhất. PostgreSQL là một **Hệ quản trị cơ sở dữ liệu** (Database Management System - DBMS, cụ thể hơn là ORDBMS: Hệ quản trị CSDL Đối tượng - Quan hệ). "Cơ sở dữ liệu" (Database) chỉ là tập hợp các dữ liệu được lưu trữ, trong khi PostgreSQL là hệ thống/phần mềm để tạo, quản lý và tương tác với các tập dữ liệu đó.*
+
+<b>Câu hỏi 20.2 Bạn có thể sử dụng các công nào để kết nối và làm việc với Postgresql? Phát biểu nào không đúng?</b> <br>
+A. Dùng công cụ dòng lệnh: psql. <br>
+<mark>B. Dùng giao thức ping</mark> <br>
+C. Dùng công cụ GUI: pgAdmin hoặc DBeaver. <br>
+D. API/Thư viện (gắn với một ngôn ngữ lập trình): JDBC hoặc Sequelize.
+
+> *Giải thích: Lệnh `ping` (sử dụng giao thức ICMP) là một công cụ mạng dùng để kiểm tra xem một máy chủ có đang kết nối mạng hay không, đo độ trễ đường truyền. Nó hoàn toàn không có khả năng kết nối, truy vấn hay thao tác với hệ quản trị cơ sở dữ liệu (như việc gửi lệnh SQL).*
+
+<b>Bài tập 20.3 Tải, cài đặt Postgresql. Sử dụng psql và pgAdmin để kết nối tới Postgresql.</b>
+
+> *Ghi chú thực hành: Học viên cần truy cập [postgresql.org](https://www.postgresql.org/download/) để tải bản cài đặt phù hợp với hệ điều hành. Trong quá trình cài đặt, ghi nhớ mật khẩu cấp cho tài khoản siêu quản trị viên (`postgres`). Sau đó, mở `psql` (SQL Shell) hoặc phần mềm `pgAdmin 4` (thường được cài đặt kèm theo) và nhập mật khẩu để kiểm tra kết nối (localhost, port 5432).*
