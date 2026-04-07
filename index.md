@@ -567,6 +567,9 @@ C. server-site template engine <br>
 
 > *Giải thích: Express-handlebars là một "template engine" (công cụ xử lý mẫu) hoạt động ở phía máy chủ (server-side). Nhiệm vụ của nó là kết hợp dữ liệu từ backend (Node.js/Express) với các file giao diện (.handlebars) để tạo ra mã HTML hoàn chỉnh trước khi gửi trả về cho trình duyệt (client). Các đáp án khác bị sai về thuật ngữ ("machine", "site") hoặc sai môi trường hoạt động ("client-side").*
 
+
+
+
 # Chương 18. Tạo giao diện các trang con
 
 
@@ -589,6 +592,8 @@ C. Mối quan hệ nhiều-nhiều (N-N), trong đó nhiều bản ghi ở bản
 
 > *Giải thích: Trong lý thuyết cơ sở dữ liệu quan hệ (Relational Database), 3 loại mối quan hệ cơ bản (Relationship Types) được công nhận là: 1-1 (One-to-One), 1-N (One-to-Many) và N-N (Many-to-Many). Yếu tố "Không" (0) hoặc "Một" (1) thực chất là để chỉ tính bắt buộc hay tùy chọn (Optionality/Cardinality limits) của một thực thể tham gia vào mối quan hệ, chứ không phải là một "kiểu quan hệ cơ bản" độc lập.*
 
+
+
 # Chương 20. Làm việc với Postgresql
 
 <b>Câu hỏi 20.1 Postgresql là gì? Phát biểu nào sau đây không đúng?</b> <br>
@@ -609,4 +614,7 @@ D. API/Thư viện (gắn với một ngôn ngữ lập trình): JDBC hoặc Seq
 
 <b>Bài tập 20.3 Tải, cài đặt Postgresql. Sử dụng psql và pgAdmin để kết nối tới Postgresql.</b>
 
-> *Ghi chú thực hành: Học viên cần truy cập [postgresql.org](https://www.postgresql.org/download/) để tải bản cài đặt phù hợp với hệ điều hành. Trong quá trình cài đặt, ghi nhớ mật khẩu cấp cho tài khoản siêu quản trị viên (`postgres`). Sau đó, mở `psql` (SQL Shell) hoặc phần mềm `pgAdmin 4` (thường được cài đặt kèm theo) và nhập mật khẩu để kiểm tra kết nối (localhost, port 5432).*
+* **Cài đặt Postgresql:**
+[![Postgresql](Image/20.1.png)](Image/20.1.png)
+
+[![Postgresql](Image/20.2.png)](Image/20.2.png)
