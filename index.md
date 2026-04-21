@@ -393,6 +393,55 @@ C. Quản lý các gói phụ thuộc <br>
 
 #  7. Local và Global, Dependencies và devDependencies
 
+Trong quá trình làm việc với Node.js và NPM, việc hiểu rõ cách cài đặt và phân loại các gói (packages) là kỹ năng bắt buộc để quản lý dự án gọn gàng và tránh lỗi môi trường.
+
+## 7.1 Cài đặt Local (Cục bộ) và Global (Toàn cục)
+
+Hai kiểu cài đặt này quyết định **phạm vi hoạt động** và **vị trí lưu trữ** của thư viện/công cụ mà bạn tải về.
+
+### Bảng So sánh Local và Global
+
+| Tiêu chí | Cài đặt Cục bộ (Local) | Cài đặt Toàn cục (Global) |
+| :--- | :--- | :--- |
+| **Định nghĩa** | Cài đặt dành riêng cho một dự án cụ thể. | Cài đặt trên hệ thống máy tính, dùng chung cho mọi dự án. |
+| **Câu lệnh cài đặt** | `npm install <tên_gói>` | `npm install -g <tên_gói>` |
+| **Vị trí lưu trữ** | Thư mục `node_modules` nằm bên trong dự án. | Thư mục hệ thống của máy tính (Xem bằng lệnh: `npm root -g`). |
+| **Cập nhật package.json** | Có (được tự động ghi nhận vào file). | Không ghi vào `package.json` của dự án. |
+| **Khi nào nên dùng?** | Các thư viện, framework mà mã nguồn dự án trực tiếp gọi ra để sử dụng (VD: `express`). | Các công cụ dòng lệnh (CLI) cần gọi từ bất kỳ thư mục nào trên máy (VD: `nodemon`). |
+| **Lệnh gỡ bỏ** | `npm uninstall <tên_gói>` | `npm uninstall -g <tên_gói>` |
+
+> **Lưu ý thực tế:**
+> * Luôn ưu tiên cài đặt Local khi có thể để đảm bảo dự án chạy ổn định trên các máy khác nhau.
+> * Tránh lạm dụng cài Global vì nó dễ gây ra lỗi xung đột phiên bản (ví dụ dự án A cần bản cũ, dự án B cần bản mới).
+> * Nếu cần chạy một công cụ CLI được cài Local, hãy dùng lệnh `npx` (Ví dụ: `npx nodemon index.js`).
+
+---
+
+## 7.2 Dependencies và devDependencies
+
+Khi bạn cài đặt gói theo kiểu cục bộ (Local), thông tin của chúng sẽ được lưu vào tập tin `package.json` dưới hai danh mục khác nhau. Việc phân chia này giúp tối ưu hóa dung lượng khi đưa web lên server thực tế.
+
+### Phân biệt Dependencies và devDependencies
+
+| Tiêu chí | Dependencies (Phụ thuộc cốt lõi) | devDependencies (Phụ thuộc phát triển) |
+| :--- | :--- | :--- |
+| **Vai trò** | Các gói bắt buộc phải có để mã nguồn chạy được trên môi trường thực tế (Production). | Các công cụ chỉ dùng để hỗ trợ lập trình viên trong quá trình viết code hoặc test (Development). |
+| **Ví dụ** | `express`, thư viện kết nối cơ sở dữ liệu, v.v. | `nodemon`, công cụ format code, công cụ test lỗi. |
+| **Câu lệnh cài đặt** | `npm install <tên_gói>` | `npm install <tên_gói> --save-dev` |
+| **Trên Server Production** | Sẽ được tải về và cài đặt đầy đủ. | Sẽ bị bỏ qua, không cài đặt để giảm dung lượng hệ thống. |
+
+---
+
+## 📋 Tổng hợp các lệnh NPM cần nhớ trong bài
+
+* **Tạo file cấu hình dự án (`package.json`):** `npm init -y`
+* **Cài gói Local (vào mục Dependencies):** `npm install <tên_gói>`
+* **Cài gói Local (vào mục devDependencies):** `npm install <tên_gói> --save-dev`
+* **Gỡ bỏ gói Local:** `npm uninstall <tên_gói>`
+* **Cài gói Global:** `npm install -g <tên_gói>`
+* **Xem đường dẫn lưu các gói Global:** `npm root -g`
+* **Liệt kê danh sách các gói Global đã cài:** `npm ls -g --depth 0`
+
 <b>Bài tập 7.1 Thực hiện các cài đặt trong bài học.</b>
 
 * **Cài đặt cục bộ:** 
