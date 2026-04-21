@@ -274,6 +274,42 @@ D. Dễ dàng bảo trì và mở rộng
 
 #  3. Web server
 
+Dù phát triển web bằng phương pháp nào (viết thuần, dùng framework hay CMS), bạn đều phải hiểu về hạ tầng cơ bản nhất: **Web server**.
+
+## 3.1 Khái niệm và Chức năng cốt lõi
+**Web server (Máy chủ web)** là một máy tính hoặc phần mềm làm nhiệm vụ lưu trữ và cung cấp nội dung website/ứng dụng web cho người dùng thông qua mạng Internet.
+
+**4 Chức năng chính:**
+1. **Lưu trữ:** Lưu trữ toàn bộ mã nguồn, dữ liệu, hình ảnh, video của ứng dụng web.
+2. **Nhận Request (Yêu cầu):** Tiếp nhận yêu cầu truy cập từ trình duyệt của người dùng.
+3. **Xử lý Request:** Đọc file, thực thi mã nguồn (code) và truy vấn Cơ sở dữ liệu (Database).
+4. **Gửi Response (Phản hồi):** Trả kết quả (thường là trang HTML) về cho trình duyệt để hiển thị cho người dùng.
+
+## 3.2 Quy trình xử lý Request - Response (7 bước)
+Khi người dùng gõ một đường dẫn (URL) lên trình duyệt, Web server sẽ hoạt động theo luồng sau:
+1. Nhận request từ trình duyệt.
+2. Phân tích request và điều hướng tới ứng dụng web tương ứng để xử lý.
+3. Đọc/truy xuất dữ liệu từ Cơ sở dữ liệu (Database).
+4. Đổ dữ liệu vừa lấy được vào các mẫu giao diện (HTML Template).
+5. Gửi mã HTML hoàn chỉnh (Response) trả về cho trình duyệt.
+6. Trình duyệt nhận response và hiển thị nội dung lên màn hình.
+7. Trình duyệt tự động gửi thêm các request phụ để tải các tài nguyên tĩnh (Static files) như: CSS, JavaScript, Hình ảnh,...
+
+## 3.3 Các phần mềm Web server phổ biến
+Trên thị trường hiện nay, các phần mềm Web server được sử dụng nhiều nhất bao gồm:
+* **Apache**
+* **Nginx**
+* **Node.js** (Tích hợp sẵn khả năng làm web server)
+* **IIS** (Của Microsoft)
+* **Tomcat** (Thường dùng cho Java)
+* **Lighttpd**
+
+## 3.4 Kiến trúc của một "Máy" Web server
+Thuật ngữ "Web server" không chỉ dùng để gọi phần mềm (như Apache, Nginx) mà còn dùng để gọi **chính cái máy tính (Hardware)** được cài đặt các phần mềm đó. Một máy Web server chuẩn bao gồm:
+* **Phần cứng (Hardware):** Là máy chủ chuyên dụng, cấu hình cực mạnh, chịu tải cao, hoạt động liên tục 24/7 không tắt.
+* **Hệ điều hành (OS):** Thường dùng các hệ điều hành dành riêng cho máy chủ (như Ubuntu Server, CentOS, Windows Server).
+* **Phần mềm (Software):** Bao gồm phần mềm HTTP Server (Apache/Nginx/IIS), Hệ quản trị cơ sở dữ liệu (MySQL/PostgreSQL) và Trình biên dịch/thực thi mã nguồn (PHP/Node.js/Python).
+
 ## 3.3 Bài tập
 
 <b>Bài 3.1 Thực hành lại các cài đặt trong bài học.</b>
