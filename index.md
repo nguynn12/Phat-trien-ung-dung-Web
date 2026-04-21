@@ -399,6 +399,46 @@ D. Chatbot (Gemini), Trang web (https://codepen.io/)
 
 #  5. Nodejs và NPM
 
+## 5.1 Node.js là gì?
+**Node.js** không phải là một framework, cũng không phải là một ngôn ngữ lập trình. Nó là một **nền tảng (platform)** hay một **môi trường thực thi (runtime environment)** mã nguồn mở, đa nền tảng, cho phép chạy mã JavaScript ở phía máy chủ (Server-side) thay vì chỉ chạy trên trình duyệt.
+
+**Công dụng:** Sử dụng để tạo Web Server, ứng dụng web, công cụ dòng lệnh (CLI), và nhiều loại phần mềm khác.
+
+**Quy trình cơ bản:** Lập trình viên viết mã bằng JavaScript (thuần hoặc dùng framework như Express) -> Node.js đóng vai trò phiên dịch (biên dịch) mã nguồn -> Thực thi và xuất kết quả.
+
+### Các thành phần cốt lõi của Node.js
+Bên trong "vỏ bọc" Node.js chứa rất nhiều thành phần quan trọng, nổi bật nhất gồm:
+* **V8 Engine:** Cốt lõi của Node.js, dùng để biên dịch mã JavaScript thành mã máy tốc độ cao (được phát triển bởi Google).
+* **HTTP Module:** Thư viện có sẵn giúp tạo máy chủ web (Web Server).
+* **NPM (Node Package Manager):** Công cụ quản lý các gói thư viện bên thứ 3.
+* Các module/thư viện cốt lõi khác hỗ trợ đọc ghi file (fs), xử lý đường dẫn (path), v.v.
+
+---
+
+## 5.2 Tải và Cài đặt Node.js
+* **Cài đặt:** Tải file cài đặt từ trang chủ [nodejs.org](https://nodejs.org/en) và tiến hành cài đặt như các phần mềm thông thường.
+* **Kiểm tra cài đặt:**
+    1. Mở cửa sổ dòng lệnh (Terminal / CMD / PowerShell).
+    2. Gõ lệnh: `node -v`
+    3. Nếu kết quả trả về số phiên bản (Ví dụ: `v22.14.0`) thì Node.js đã được cài đặt thành công và biến môi trường (Environment Variable) đã được thiết lập đúng.
+
+---
+
+## 5.3 NPM (Node Package Manager)
+
+Khi lập trình ứng dụng thực tế, chúng ta hiếm khi tự viết code từ con số 0 mà sẽ tải các thư viện có sẵn (gọi là **Package**) về để ráp lại. Số lượng thư viện này rất khổng lồ nên cần một công cụ để quản lý, đó chính là **NPM**.
+
+* **Đặc điểm:** NPM là công cụ đi kèm mặc định khi bạn cài đặt Node.js (cài 1 được 2). Các thư viện mà dự án của bạn sử dụng được gọi là các *thành phần phụ thuộc* (**Dependencies**).
+* **Kiểm tra NPM:** Mở dòng lệnh và gõ `npm -v`. Nếu hiển thị phiên bản (Ví dụ: `10.9.2`) nghĩa là NPM đã sẵn sàng.
+
+### Cấu trúc 3 thành phần của hệ sinh thái NPM
+1. **Website ([npmjs.com](https://www.npmjs.com/)):** Nơi lập trình viên lên để tìm kiếm tài liệu và đọc hướng dẫn sử dụng của các gói thư viện (như Express, React, Lodash...).
+2. **Registry (Kho lưu trữ):** Cơ sở dữ liệu khổng lồ chứa toàn bộ mã nguồn của các thư viện trên thế giới.
+3. **CLI (Command Line Interface - Công cụ dòng lệnh):** Phần mềm chạy trong Terminal trên máy của bạn, dùng để ra lệnh cho máy tính kết nối lên Registry tải gói thư viện về.
+
+> **Quy trình sử dụng một thư viện (Ví dụ: Express):**
+> Lên website `npmjs.com` tìm kiếm `express` -> Đọc tài liệu -> Mở Terminal gõ lệnh cài đặt -> NPM CLI sẽ chạy lên Registry tải mã nguồn `express` về bỏ vào thư mục dự án của bạn.
+
 <b>Bài tập 5.1 Tải và cài đặt Nodejs, NPM trên máy tính. Kiểm tra để đảm bảo Nodejs và NPM sẵn sàng sử dụng.</b>
 [![Ảnh](Image/5.1.png)](Image/5.1.png)
 
