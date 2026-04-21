@@ -1,5 +1,108 @@
 # 1. Một số khái niệm
 
+## 1.1. Web là gì?
+**Web** hay **WWW** là từ viết tắt của *World Wide Web*, là mạng lưới thông tin toàn cầu. 
+Web hoạt động dựa trên hạ tầng là Internet. Web bao gồm rất nhiều các trang web kết nối lại với nhau, với thông tin đa dạng như văn bản, hình ảnh, âm thanh, video, và nhiều loại dữ liệu khác.
+
+**Cái lợi của web:**
+* Cung cấp thông tin.
+* Kết nối mọi người.
+* Hỗ trợ công việc và học tập.
+* Phát triển kinh tế.
+
+**Cái hại của web:**
+* Thông tin sai lệch và tin giả.
+* Nội dung độc hại.
+* Lừa đảo trực tuyến.
+* Nghiện Internet và mạng xã hội.
+* Xâm phạm quyền riêng tư.
+* Ảnh hưởng tới sức khỏe.
+
+**Chúng ta cùng trải nghiệm với hệ thống web:**
+Để có thể sử dụng hệ thống web, chúng ta cần có một kết nối Internet và một trình duyệt web.
+* Muốn có kết nối Internet, bạn phải đi thuê từ nhà cung cấp. Một số nhà cung cấp kết nối Internet tại Việt Nam: *VNPT, FPT Telecom, Viettel Telecom, CMC Telecom, NetNam.*
+* Khi đã có kết nối, bạn có thể sử dụng một trình duyệt web bất kỳ để sử dụng hệ thống web. Một số trình duyệt web phổ biến: *Google Chrome, Mozilla Firefox, Microsoft Edge, Opera, Safari.*
+
+> **Ví dụ:** Mở trình duyệt Google Chrome, gõ vào đường dẫn [https://vi.wikipedia.org/wiki/World_Wide_Web](https://vi.wikipedia.org/wiki/World_Wide_Web). Bạn đọc các thông tin trên trang web nói về World Wide Web, để ý các chữ có màu xanh, khi trỏ chuột vào sẽ chuyển con trỏ chuột thành bàn tay, đó là các chữ có gắn (nhúng) liên kết. Bạn bấm vào các liên kết để đến các trang web khác.
+
+---
+
+## 1.2. Trang web là gì?
+**Trang web** (webpage, web page) là một trang tài liệu trên hệ thống web. Trang web có thể chứa văn bản, hình ảnh, âm thanh, video, và các nội dung đa phương tiện khác. 
+
+Như ở ví dụ trên, bạn sẽ thấy các trang web:
+* [https://vi.wikipedia.org/wiki/World_Wide_Web](https://vi.wikipedia.org/wiki/World_Wide_Web): trang web chứa thông tin về World Wide Web. Bấm vào chữ **Internet** trên trang này để mở trang web nói về Internet.
+* [https://vi.wikipedia.org/wiki/Internet](https://vi.wikipedia.org/wiki/Internet): trang web chứa thông tin về Internet. Bấm vào chữ **mạng máy tính** trên trang này để mở trang web nói về mạng máy tính.
+* [https://vi.wikipedia.org/wiki/M%E1%BA%A1ng_m%C3%A1y_t%C3%ADnh](https://vi.wikipedia.org/wiki/M%E1%BA%A1ng_m%C3%A1y_t%C3%ADnh): trang web chứa bài viết về mạng máy tính.
+
+Bạn cứ tiếp tục bấm vào các liên kết, nó sẽ dẫn bạn lang thang khắp nơi trên không gian thông tin toàn cầu. Đó là mạng lưới thông tin được tạo ra nhờ sự liên kết giữa các trang web với nhau.
+
+**Thêm một số thông tin về trang web:**
+* Ở mức đơn giản nhất, trang web được tạo ra bằng ngôn ngữ đánh dấu siêu văn bản HTML. Tuy nhiên, trong thực tế, để tạo ra trang web cần sử dụng thêm các ngôn ngữ khác như CSS, JavaScript; và một trong các ngôn ngữ lập trình phía server như Python, JavaScript, C#, PHP, Go, Java, Ruby.
+* Mã nguồn của trang web được lưu trên máy chủ (máy web server).
+* Mỗi trang web có một địa chỉ URL duy nhất. URL là một chuỗi ký tự, xác định vị trí của một trang web trên Internet.
+* Trang web có thể được dùng để: cung cấp thông tin, bán hàng, chia sẻ ý kiến, kết nối mọi người, giáo dục, quản lý, giải trí...
+
+**Ví dụ về các địa chỉ URL của trang web:**
+* Trang web chứa thông tin về World Wide Web có địa chỉ URL là: [https://vi.wikipedia.org/wiki/World_Wide_Web](https://vi.wikipedia.org/wiki/World_Wide_Web)
+* Trang web chứa thông tin về Internet có địa chỉ URL là: [https://vi.wikipedia.org/wiki/Internet](https://vi.wikipedia.org/wiki/Internet)
+* Trang chủ của báo Tuổi Trẻ có địa chỉ URL là: [https://tuoitre.vn](https://tuoitre.vn)
+* Trang chủ của ngôn ngữ Python địa chỉ URL là: [https://www.python.org/](https://www.python.org/)
+
+**Để xem mã nguồn của một trang web bằng trình duyệt:**
+* Mở một trang web bằng trình duyệt.
+* Chuột phải vào vùng nội dung trang web.
+* Chọn mục **View page source** để xem mã nguồn.
+
+**Hoặc:**
+* Mở một trang web bằng trình duyệt.
+* Chuột phải vào vùng nội dung trang web.
+* Chọn mục **Inspect**.
+* Vào các tab: *Elements, Styles, Sources* để xem mã nguồn.
+
+*Lưu ý:* Trên trình duyệt, bạn chỉ có thể xem được mã nguồn HTML, CSS, JavaScript và các tập tin tài nguyên (hình ảnh, icon) của một trang web.
+
+> **Ví dụ:** Sử dụng trình duyệt để xem mã nguồn của trang chủ Python. *(Xem hình minh họa)*
+
+---
+
+## 1.3. Website là gì?
+**Website** là một tập hợp nhiều trang web có liên quan đến nhau, có một địa chỉ URL duy nhất. 
+
+**Ví dụ:** Chúng ta đã truy cập vào website của báo Tuổi Trẻ, có địa chỉ URL là [https://tuoitre.vn](https://tuoitre.vn), trong đó có nhiều trang web như:
+* Trang thời sự, có địa chỉ URL là: [https://tuoitre.vn/thoi-su.htm](https://tuoitre.vn/thoi-su.htm)
+* Trang công nghệ có địa chỉ URL là: [https://tuoitre.vn/cong-nghe.htm](https://tuoitre.vn/cong-nghe.htm)
+* Và nhiều trang web khác.
+
+Bạn có thể truy cập vào website của Wikipedia, Python, React để quan sát địa chỉ URL của website và địa chỉ URL các trang web của mỗi website.
+* Mã nguồn của website chính là mã nguồn của mỗi trang web thành viên, được đặt trên máy web server.
+* Bạn có thể truy cập các website bằng mạng công cộng (Internet) hoặc mạng nội bộ (LAN), thậm chí trên máy cục bộ thông qua địa chỉ URL của nó.
+* Người ta sử dụng website cho nhiều mục đích khác nhau, ví dụ: giải trí, mạng xã hội, tin tức, giáo dục, thương mại, quản lý. Website có thể thuộc về cá nhân, công ty, chính phủ hoặc các tổ chức xã hội.
+
+---
+
+## 1.4. Ứng dụng web là gì?
+**Ứng dụng web** (web application hay web app) là một loại ứng dụng mà người dùng có thể truy cập và sử dụng thông qua Internet hoặc mạng nội bộ (hoặc trên máy cục bộ) bằng trình duyệt web. 
+
+**Một số đặc điểm của ứng dụng web:**
+* Mã nguồn của ứng dụng web được để trên máy server, giao diện ứng dụng web được hiển thị trên trình duyệt.
+* Ứng dụng web hoạt động dựa trên mô hình Client - Server.
+* Không có sự phân biệt rạch ròi, rõ ràng giữa website và ứng dụng web.
+
+Một số loại ứng dụng web: thư điện tử, bán hàng trực tuyến, diễn đàn, nhật kí mạng, bản đồ, quản lý nhân lực, quản lý y tế và chăm sóc sức khỏe.
+
+**Sự khác nhau giữa website và ứng dụng web:**
+
+| Tiêu chí | Website | Ứng dụng web (Web App) |
+| :--- | :--- | :--- |
+| **Mức độ tương tác** | Cho phép người dùng tương tác và thêm nội dung, tuy nhiên phần lớn nội dung vẫn là do nhà phát triển tạo ra. | Hoạt động dựa trên sự tương tác từ người dùng, hầu hết nội dung và dữ liệu là do người dùng đóng góp. |
+| **Độ phức tạp** | Ít phức tạp và dễ phát triển hơn so với ứng dụng web. | Phức tạp và cần nhiều kĩ năng hơn để phát triển so với website (hoạt động giống như một ứng dụng máy tính thực thụ). |
+
+**Một số ví dụ của ứng dụng web:**
+* Mạng xã hội Facebook: [https://www.facebook.com/](https://www.facebook.com/)
+* Bán hàng trực tuyến: [https://tiki.vn/](https://tiki.vn/)
+* Thư điện tử: [https://gmail.com](https://gmail.com)
+
 ## 1.5. Bài tập
 
 <b>Câu 1.1 Liệt kê 3 gói thuê bao (tên gói, giá tiền) của 3 nhà cung cấp kết nối Internet tại Việt Nam.</b>
@@ -618,3 +721,65 @@ D. API/Thư viện (gắn với một ngôn ngữ lập trình): JDBC hoặc Seq
 [![Postgresql](Image/20.1.png)](Image/20.1.png)
 
 [![Postgresql](Image/20.2.png)](Image/20.2.png)
+
+
+
+# 21. Lập trình với cơ sở dữ liệu
+
+## 21.1 Code First và Database First
+Đây là 2 phương pháp tiếp cận khi kết nối Mã nguồn (Code) với Cơ sở dữ liệu (Database) thông qua ORM.
+
+* **Code First (Ưu tiên Code):** * **Bản chất:** Viết cấu trúc dữ liệu bằng Code trước (Class/Model), sau đó tool sẽ tự động tạo bảng trong Database.
+    * **Khi nào dùng:** Dự án làm mới từ đầu.
+* **Database First (Ưu tiên DB):**
+    * **Bản chất:** Có sẵn các bảng trong Database trước, sau đó tool sẽ tự động sinh ra Code (Model) tương ứng.
+    * **Khi nào dùng:** Dự án kế thừa, đã có sẵn Database từ trước.
+
+## 21.2 ORM (Object-Relational Mapping)
+* **Khái niệm:** Là kỹ thuật "Ánh xạ Quan hệ - Đối tượng". Nó kết nối các Đối tượng trong code với các Bảng trong Database.
+* **Lợi ích:** Giúp lập trình viên gọi dữ liệu bằng các **hàm/phương thức** (như `User.findAll()`) thay vì phải ngồi viết các câu lệnh SQL dài dòng (như `SELECT * FROM User`). Tăng tốc độ code và dễ bảo trì.
+* **Công cụ phổ biến:** Sequelize, Prisma (Node.js), Eloquent (PHP/Laravel), Hibernate (Java).
+
+## 21.3 Các thư viện cần cài đặt (PostgreSQL + Sequelize)
+1. **`pg`:** Cầu nối (Driver) giúp Node.js giao tiếp được với máy chủ PostgreSQL.
+2. **`pg-hstore`:** Tiện ích hỗ trợ lưu trữ dữ liệu dạng key-value (từ vựng của PostgreSQL).
+3. **`sequelize`:** Thư viện ORM cốt lõi.
+4. **`sequelize-cli`** (Cài Global): Công cụ dòng lệnh (nhập lệnh trên Terminal) để tự động sinh code.
+
+## 21.4 Cấu trúc thư mục (Lệnh `sequelize init`)
+Khi chạy lệnh khởi tạo `sequelize init`, hệ thống sẽ sinh ra 4 thư mục cực kỳ quan trọng:
+1. **`config/`**: Nơi chứa cấu hình kết nối DB (Tên database, username, password, cổng mạng).
+2. **`models/`**: Nơi định nghĩa cấu trúc các bảng (Mỗi bảng là một Model/Class).
+3. **`migrations/`**: Chứa code để **tạo cái VỎ** (Lịch sử thay đổi cấu trúc bảng: thêm bảng, xóa cột).
+4. **`seeders/`**: Chứa code để **bơm cái RUỘT** (Nhúng dữ liệu mẫu ban đầu vào DB để test).
+
+---
+
+## Phần Bài Tập Trắc Nghiệm
+
+<b>Câu hỏi 21.1 Phát biểu nào sau đây KHÔNG đúng về Code First và Database First?</b> <br>
+A. Code First là phương pháp định nghĩa mô hình dữ liệu trong mã nguồn trước, sau đó ORM sẽ tạo hoặc cập nhật schema cơ sở dữ liệu. <br>
+B. Database First là phương pháp thiết kế cơ sở dữ liệu trước, sau đó ORM sẽ sinh ra các mô hình trong mã nguồn dựa trên schema đã có. <br>
+<mark>C. Cả Code First và Database First đều bỏ qua vai trò của ORM và cho phép lập trình viên tương tác trực tiếp với cơ sở dữ liệu bằng SQL.</mark> <br>
+D. Code First thường phù hợp với các dự án mới, trong khi Database First thích hợp với các dự án làm việc trên cơ sở dữ liệu đã tồn tại.
+
+> *Giải thích: Sai hoàn toàn vì cả 2 phương pháp này đều **bắt buộc phải sử dụng ORM** để tự động hóa việc ánh xạ. Viết SQL trực tiếp gọi là "Raw Query", không thuộc về triết lý của hai phương pháp này.*
+
+<b>Câu hỏi 21.2 Phát biểu nào sau đây KHÔNG đúng về ORM?</b> <br>
+A. ORM là một kỹ thuật lập trình giúp ánh xạ giữa các đối tượng trong mã nguồn và các bảng trong cơ sở dữ liệu quan hệ. <br>
+<mark>B. ORM làm tăng độ phức tạp của mã nguồn và giảm hiệu suất phát triển ứng dụng.</mark> <br>
+C. ORM cho phép lập trình viên thao tác với cơ sở dữ liệu bằng cú pháp của ngôn ngữ lập trình thay vì viết câu lệnh SQL trực tiếp. <br>
+D. Sequelize (Node.js) và Django ORM (Python) là những ví dụ về các ORM phổ biến.
+
+> *Giải thích: Mục đích lớn nhất của ORM là **GIẢM** độ phức tạp (không cần nhớ cú pháp SQL) và **TĂNG** hiệu suất phát triển (code nhanh hơn rất nhiều).*
+
+<b>Câu hỏi 21.3 Phát biểu nào sau đây về mục đích của các thư mục (do `sequelize init` tạo) là KHÔNG đúng?</b> <br>
+<mark>A. Thư mục migrations chứa các tập tin SQL script để thực hiện các thay đổi lược đồ cơ sở dữ liệu theo thời gian.</mark> <br>
+B. Thư mục config chứa các tập tin cấu hình kết nối đến cơ sở dữ liệu cho các môi trường phát triển, kiểm thử và sản xuất. <br>
+C. Thư mục models chứa các tập tin định nghĩa cấu trúc các bảng trong cơ sở dữ liệu dưới dạng các model (lớp) JavaScript. <br>
+D. Thư mục seeders chứa các tập tin JavaScript để chèn dữ liệu mẫu ban đầu vào cơ sở dữ liệu.
+
+> *Giải thích: Chữ sai ở đây là "SQL script". Thư mục `migrations` chứa các tập tin **JavaScript** gọi lệnh của Sequelize, chứ không chứa các file thuần SQL (như `.sql`).*
+
+
+
