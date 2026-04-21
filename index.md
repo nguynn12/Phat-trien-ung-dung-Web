@@ -153,6 +153,56 @@ C. Website và ứng dụng web hoạt động dựa trên mô hình client-serv
 
 # 2. Tổng quan về phát triển ứng dụng web
 
+## 2.1 Phát triển ứng dụng web là gì?
+
+Phát triển ứng dụng web là quá trình tạo ra các phần mềm chạy trên nền tảng web. Tương tự như việc tạo ra mọi phần mềm máy tính khác, quá trình này tuân theo một Vòng đời Phát triển Phần mềm (SDLC) gồm 6 giai đoạn cơ bản:
+
+1. **Lấy và phân tích yêu cầu:** Hiểu rõ hệ thống cần làm gì.
+2. **Thiết kế:** Dựng cấu trúc, giao diện và cơ sở dữ liệu.
+3. **Lập trình:** Viết mã nguồn (Trọng tâm của tài liệu này).
+4. **Kiểm thử:** Tìm và sửa lỗi (Bug).
+5. **Triển khai:** Đưa ứng dụng lên môi trường thực tế (Server/Hosting).
+6. **Vận hành và Bảo trì:** Theo dõi, hỗ trợ và nâng cấp phần mềm.
+
+**Tại sao nên học lập trình (dù chỉ ở mức căn bản)?**
+* **Tư duy cốt lõi:** Lập trình rèn luyện tư duy logic, giúp bạn hiểu rõ cách một hệ thống vận hành.
+* **Mở rộng cơ hội:** Dù sau này làm Kỹ sư cầu nối (BrSE), Kiểm thử (Tester) hay Quản lý dự án (PM), nền tảng lập trình giúp bạn giao tiếp và làm việc hiệu quả hơn.
+* **Nhu cầu nhân lực lớn:** Giai đoạn lập trình tốn nhiều thời gian và công sức nhất, do đó luôn cần lượng lớn nhân sự trên thị trường.
+
+---
+
+## 2.2 Ba phương pháp tạo ra ứng dụng web
+
+Dựa theo mức độ từ dễ đến khó, có 3 cách phổ biến để xây dựng ứng dụng web:
+
+### Phương pháp 1: Sử dụng Hệ quản trị nội dung (CMS)
+
+CMS (Content Management System) là phần mềm giúp tạo lập và quản lý website mà không yêu cầu kiến thức lập trình chuyên sâu.
+* **Chức năng chính:** Quản lý nội dung (bài viết, hình ảnh), Quản lý người dùng (phân quyền), Tùy biến giao diện (Theme/Template), Cài đặt tiện ích mở rộng (Plugin/Module), và Tối ưu SEO.
+* **Ví dụ phổ biến:** WordPress, Wix (Blog/Tin tức); Shopify, Magento (Thương mại điện tử); Moodle (Giáo dục).
+
+| Ưu điểm của CMS | Nhược điểm của CMS |
+| :--- | :--- |
+| - Dễ sử dụng, tiết kiệm thời gian phát triển.<br>- Không yêu cầu biết lập trình.<br>- Đa dạng giao diện và plugin có sẵn.<br>- Tối ưu tốt cho SEO.<br>- Chi phí cực thấp. | - Nguy cơ bảo mật cao (hay bị tấn công).<br>- Tốc độ có thể chậm do mã nguồn bị phình to (dư thừa).<br>- Rất khó tùy biến các chức năng đặc thù.<br>- Phụ thuộc hoàn toàn vào hệ sinh thái của nhà cung cấp. |
+
+### Phương pháp 2: Sử dụng Framework và Thư viện hỗ trợ
+
+Đây là phương pháp phổ biến nhất trong các công ty công nghệ. Framework cung cấp các bộ khung và công cụ có sẵn, giúp lập trình viên không phải "phát minh lại cái bánh xe".
+* **Frontend:** React, Angular, Vue, Svelte, Bootstrap.
+* **Backend:** Express.js (Node.js), Laravel (PHP), Spring Boot (Java), Django (Python), ASP.NET (C#).
+
+| Ưu điểm của Framework/Thư viện | Nhược điểm của Framework/Thư viện |
+| :--- | :--- |
+| - **Tốc độ:** Code nhanh hơn nhờ các module có sẵn (routing, auth).<br>- **Chất lượng:** Cấu trúc code rõ ràng, chuẩn hóa, dễ bảo trì.<br>- **Bảo mật:** Tích hợp sẵn cơ chế chống SQL Injection, XSS.<br>- **Cộng đồng:** Tài liệu phong phú, dễ dàng tìm kiếm hỗ trợ. | - Mất thời gian học (Learning curve) để làm chủ framework.<br>- Có thể làm tăng dung lượng ứng dụng với các tính năng không dùng đến.<br>- Bị gò bó theo các quy tắc và cấu trúc mà framework ép buộc. |
+
+### Phương pháp 3: Viết thuần (Viết từ con số không)
+
+Lập trình viên tự viết toàn bộ mã nguồn bằng các ngôn ngữ cơ bản (HTML, CSS, JS cho Frontend; và JS, Python, Java, PHP... cho Backend) mà tuyệt đối không dùng đến Framework hay thư viện bên thứ 3.
+
+| Ưu điểm của Viết thuần | Nhược điểm của Viết thuần |
+| :--- | :--- |
+| - Toàn quyền kiểm soát 100% mã nguồn.<br>- Tối ưu hóa hiệu năng và tốc độ tối đa (không có code thừa).<br>- Nâng cao trình độ tư duy và hiểu sâu về bản chất ngôn ngữ. | - Tốn cực kỳ nhiều thời gian và công sức.<br>- Khối lượng code khổng lồ, rất khó quản lý khi dự án lớn lên.<br>- Đòi hỏi kỹ năng chuyên môn cực cao từ lập trình viên.<br>- Chi phí phát triển rất đắt đỏ. |
+
 ## 2.3. Bài tập
 
 <b>Bài 2.1 Tìm trang (web) chủ của các CMS trong lĩnh vực phát triển ứng dụng web.</b>
