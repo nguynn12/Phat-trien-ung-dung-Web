@@ -1,137 +1,6 @@
 # 1. Một số khái niệm
 
-## 1.1. Web là gì?
-**Web** hay **WWW** là từ viết tắt của *World Wide Web*, là mạng lưới thông tin toàn cầu. 
-Web hoạt động dựa trên hạ tầng là Internet. Web bao gồm rất nhiều các trang web kết nối lại với nhau, với thông tin đa dạng như văn bản, hình ảnh, âm thanh, video, và nhiều loại dữ liệu khác.
-
-**Cái lợi của web:**
-* Cung cấp thông tin.
-* Kết nối mọi người.
-* Hỗ trợ công việc và học tập.
-* Phát triển kinh tế.
-
-**Cái hại của web:**
-* Thông tin sai lệch và tin giả.
-* Nội dung độc hại.
-* Lừa đảo trực tuyến.
-* Nghiện Internet và mạng xã hội.
-* Xâm phạm quyền riêng tư.
-* Ảnh hưởng tới sức khỏe.
-
-**Chúng ta cùng trải nghiệm với hệ thống web:**
-Để có thể sử dụng hệ thống web, chúng ta cần có một kết nối Internet và một trình duyệt web.
-* Muốn có kết nối Internet, bạn phải đi thuê từ nhà cung cấp. Một số nhà cung cấp kết nối Internet tại Việt Nam: *VNPT, FPT Telecom, Viettel Telecom, CMC Telecom, NetNam.*
-* Khi đã có kết nối, bạn có thể sử dụng một trình duyệt web bất kỳ để sử dụng hệ thống web. Một số trình duyệt web phổ biến: *Google Chrome, Mozilla Firefox, Microsoft Edge, Opera, Safari.*
-
-> **Ví dụ:** Mở trình duyệt Google Chrome, gõ vào đường dẫn [https://vi.wikipedia.org/wiki/World_Wide_Web](https://vi.wikipedia.org/wiki/World_Wide_Web). Bạn đọc các thông tin trên trang web nói về World Wide Web, để ý các chữ có màu xanh, khi trỏ chuột vào sẽ chuyển con trỏ chuột thành bàn tay, đó là các chữ có gắn (nhúng) liên kết. Bạn bấm vào các liên kết để đến các trang web khác.
-
----
-
-## 1.2. Trang web là gì?
-**Trang web** (webpage, web page) là một trang tài liệu trên hệ thống web. Trang web có thể chứa văn bản, hình ảnh, âm thanh, video, và các nội dung đa phương tiện khác. 
-
-Như ở ví dụ trên, bạn sẽ thấy các trang web:
-* [https://vi.wikipedia.org/wiki/World_Wide_Web](https://vi.wikipedia.org/wiki/World_Wide_Web): trang web chứa thông tin về World Wide Web. Bấm vào chữ **Internet** trên trang này để mở trang web nói về Internet.
-* [https://vi.wikipedia.org/wiki/Internet](https://vi.wikipedia.org/wiki/Internet): trang web chứa thông tin về Internet. Bấm vào chữ **mạng máy tính** trên trang này để mở trang web nói về mạng máy tính.
-* [https://vi.wikipedia.org/wiki/M%E1%BA%A1ng_m%C3%A1y_t%C3%ADnh](https://vi.wikipedia.org/wiki/M%E1%BA%A1ng_m%C3%A1y_t%C3%ADnh): trang web chứa bài viết về mạng máy tính.
-
-Bạn cứ tiếp tục bấm vào các liên kết, nó sẽ dẫn bạn lang thang khắp nơi trên không gian thông tin toàn cầu. Đó là mạng lưới thông tin được tạo ra nhờ sự liên kết giữa các trang web với nhau.
-
-**Thêm một số thông tin về trang web:**
-* Ở mức đơn giản nhất, trang web được tạo ra bằng ngôn ngữ đánh dấu siêu văn bản HTML. Tuy nhiên, trong thực tế, để tạo ra trang web cần sử dụng thêm các ngôn ngữ khác như CSS, JavaScript; và một trong các ngôn ngữ lập trình phía server như Python, JavaScript, C#, PHP, Go, Java, Ruby.
-* Mã nguồn của trang web được lưu trên máy chủ (máy web server).
-* Mỗi trang web có một địa chỉ URL duy nhất. URL là một chuỗi ký tự, xác định vị trí của một trang web trên Internet.
-* Trang web có thể được dùng để: cung cấp thông tin, bán hàng, chia sẻ ý kiến, kết nối mọi người, giáo dục, quản lý, giải trí...
-
-**Ví dụ về các địa chỉ URL của trang web:**
-* Trang web chứa thông tin về World Wide Web có địa chỉ URL là: [https://vi.wikipedia.org/wiki/World_Wide_Web](https://vi.wikipedia.org/wiki/World_Wide_Web)
-* Trang web chứa thông tin về Internet có địa chỉ URL là: [https://vi.wikipedia.org/wiki/Internet](https://vi.wikipedia.org/wiki/Internet)
-* Trang chủ của báo Tuổi Trẻ có địa chỉ URL là: [https://tuoitre.vn](https://tuoitre.vn)
-* Trang chủ của ngôn ngữ Python địa chỉ URL là: [https://www.python.org/](https://www.python.org/)
-
-**Để xem mã nguồn của một trang web bằng trình duyệt:**
-* Mở một trang web bằng trình duyệt.
-* Chuột phải vào vùng nội dung trang web.
-* Chọn mục **View page source** để xem mã nguồn.
-
-**Hoặc:**
-* Mở một trang web bằng trình duyệt.
-* Chuột phải vào vùng nội dung trang web.
-* Chọn mục **Inspect**.
-* Vào các tab: *Elements, Styles, Sources* để xem mã nguồn.
-
-*Lưu ý:* Trên trình duyệt, bạn chỉ có thể xem được mã nguồn HTML, CSS, JavaScript và các tập tin tài nguyên (hình ảnh, icon) của một trang web.
-
-> **Ví dụ:** Sử dụng trình duyệt để xem mã nguồn của trang chủ Python. *(Xem hình minh họa)*
-
----
-
-## 1.3. Website là gì?
-**Website** là một tập hợp nhiều trang web có liên quan đến nhau, có một địa chỉ URL duy nhất. 
-
-**Ví dụ:** Chúng ta đã truy cập vào website của báo Tuổi Trẻ, có địa chỉ URL là [https://tuoitre.vn](https://tuoitre.vn), trong đó có nhiều trang web như:
-* Trang thời sự, có địa chỉ URL là: [https://tuoitre.vn/thoi-su.htm](https://tuoitre.vn/thoi-su.htm)
-* Trang công nghệ có địa chỉ URL là: [https://tuoitre.vn/cong-nghe.htm](https://tuoitre.vn/cong-nghe.htm)
-* Và nhiều trang web khác.
-
-Bạn có thể truy cập vào website của Wikipedia, Python, React để quan sát địa chỉ URL của website và địa chỉ URL các trang web của mỗi website.
-* Mã nguồn của website chính là mã nguồn của mỗi trang web thành viên, được đặt trên máy web server.
-* Bạn có thể truy cập các website bằng mạng công cộng (Internet) hoặc mạng nội bộ (LAN), thậm chí trên máy cục bộ thông qua địa chỉ URL của nó.
-* Người ta sử dụng website cho nhiều mục đích khác nhau, ví dụ: giải trí, mạng xã hội, tin tức, giáo dục, thương mại, quản lý. Website có thể thuộc về cá nhân, công ty, chính phủ hoặc các tổ chức xã hội.
-
----
-
-## 1.4. Ứng dụng web là gì?
-**Ứng dụng web** (web application hay web app) là một loại ứng dụng mà người dùng có thể truy cập và sử dụng thông qua Internet hoặc mạng nội bộ (hoặc trên máy cục bộ) bằng trình duyệt web. 
-
-**Một số đặc điểm của ứng dụng web:**
-* Mã nguồn của ứng dụng web được để trên máy server, giao diện ứng dụng web được hiển thị trên trình duyệt.
-* Ứng dụng web hoạt động dựa trên mô hình Client - Server.
-* Không có sự phân biệt rạch ròi, rõ ràng giữa website và ứng dụng web.
-
-Một số loại ứng dụng web: thư điện tử, bán hàng trực tuyến, diễn đàn, nhật kí mạng, bản đồ, quản lý nhân lực, quản lý y tế và chăm sóc sức khỏe.
-
-**Sự khác nhau giữa website và ứng dụng web:**
-
-| Tiêu chí | Website | Ứng dụng web (Web App) |
-| :--- | :--- | :--- |
-| **Mức độ tương tác** | Cho phép người dùng tương tác và thêm nội dung, tuy nhiên phần lớn nội dung vẫn là do nhà phát triển tạo ra. | Hoạt động dựa trên sự tương tác từ người dùng, hầu hết nội dung và dữ liệu là do người dùng đóng góp. |
-| **Độ phức tạp** | Ít phức tạp và dễ phát triển hơn so với ứng dụng web. | Phức tạp và cần nhiều kĩ năng hơn để phát triển so với website (hoạt động giống như một ứng dụng máy tính thực thụ). |
-
-**Một số ví dụ của ứng dụng web:**
-* Mạng xã hội Facebook: [https://www.facebook.com/](https://www.facebook.com/)
-* Bán hàng trực tuyến: [https://tiki.vn/](https://tiki.vn/)
-* Thư điện tử: [https://gmail.com](https://gmail.com)
-
 ## 1.5. Bài tập
-
-<b>Câu 1.1 Liệt kê 3 gói thuê bao (tên gói, giá tiền) của 3 nhà cung cấp kết nối Internet tại Việt Nam.</b>
-
-| Nhà cung cấp | Tên gói   | Dung lượng | Giá cước (VNĐ) |
-| :--- | :--- | :--- | :--- |
-| FPT Telecom  | Super 25  | 25Mbps     | 190.000        |
-| FPT Telecom  | Super 45  | 45Mbps     | 200.000        |
-| VNPT         | Home 1    | 30Mbps     | 165.000        |
-| VNPT         | Home 2    | 50Mbps     | 180.000        |
-| Viettel      | NET1PLUS  | 40Mbps     | 165.000        |
-| Viettel      | NET2PLUS  | 80Mbps     | 180.000        |
-
-<b>Câu 1.2 Sử dụng trình duyệt để xem mã nguồn của trang web https://react.dev. Chỉ ra được đâu là mã HTML, CSS và JavaScript. Ngoài HTML, CSS, và JavaScript, bạn có biết được lập trình viên đã sử dụng ngôn ngữ lập trình nào ở phía server để tạo ra trang https://react.dev không? Tại sao?</b>
-
-[![Đoạn mã HTML](Image/1.1.png)](Image/1.1.png)
-<div align="center"><em>Đoạn mã HTML của trang web https://react.dev</em></div> <br>
-
-[![Đoạn mã CSS](Image/1.2.png)](Image/1.2.png)
-<div align="center"><em>Đoạn mã CSS của trang web https://react.dev</em></div> <br>
-
-[![Đoạn mã JavaScript](Image/1.3.png)](Image/1.3.png)
-<div align="center"><em>Đoạn mã JavaScript của trang web https://react.dev</em></div> 
-
-> **Trả lời:** Không thể biết chính xác lập trình viên đã sử dụng ngôn ngữ nào ở phía Server chỉ bằng cách xem mã nguồn trình duyệt.
->
-> **Lý do:**
-> 1.  **Cơ chế hoạt động của Web (Mô hình Client-Server):** Trình duyệt (Client) chỉ có khả năng hiểu và hiển thị 3 thành phần: HTML, CSS và JavaScript. Khi bạn truy cập một trang web, Server sẽ xử lý các logic phức tạp (bằng các ngôn ngữ như Java, C#, PHP, Python, Node.js...) sau đó kết quả trả về cho trình duyệt chỉ là HTML, CSS và JavaScript để hiển thị cho người dùng.
-> 2.  **Tính bảo mật:** Mã nguồn phía Server (Backend code) chứa các logic nghiệp vụ quan trọng và kết nối cơ sở dữ liệu. Mã này nằm tuyệt đối trên máy chủ và không bao giờ được gửi xuống máy khách (trình duyệt). Do đó, chức năng "View Source" của trình duyệt chỉ cho thấy "kết quả" chứ không cho thấy "nguyên liệu" gốc.
 
 <b>Câu 1.3 Phát biểu nào không đúng khi nói về web, trang web và website?</b> <br>
 A. Web là hệ thống thông tin toàn cầu <br>
@@ -152,99 +21,6 @@ C. Website và ứng dụng web hoạt động dựa trên mô hình client-serv
 
 
 # 2. Tổng quan về phát triển ứng dụng web
-
-## 2.1 Phát triển ứng dụng web là gì?
-
-Phát triển ứng dụng web là quá trình tạo ra các phần mềm chạy trên nền tảng web. Tương tự như việc tạo ra mọi phần mềm máy tính khác, quá trình này tuân theo một Vòng đời Phát triển Phần mềm (SDLC) gồm 6 giai đoạn cơ bản:
-
-1. **Lấy và phân tích yêu cầu:** Hiểu rõ hệ thống cần làm gì.
-2. **Thiết kế:** Dựng cấu trúc, giao diện và cơ sở dữ liệu.
-3. **Lập trình:** Viết mã nguồn (Trọng tâm của tài liệu này).
-4. **Kiểm thử:** Tìm và sửa lỗi (Bug).
-5. **Triển khai:** Đưa ứng dụng lên môi trường thực tế (Server/Hosting).
-6. **Vận hành và Bảo trì:** Theo dõi, hỗ trợ và nâng cấp phần mềm.
-
-**Tại sao nên học lập trình (dù chỉ ở mức căn bản)?**
-* **Tư duy cốt lõi:** Lập trình rèn luyện tư duy logic, giúp bạn hiểu rõ cách một hệ thống vận hành.
-* **Mở rộng cơ hội:** Dù sau này làm Kỹ sư cầu nối (BrSE), Kiểm thử (Tester) hay Quản lý dự án (PM), nền tảng lập trình giúp bạn giao tiếp và làm việc hiệu quả hơn.
-* **Nhu cầu nhân lực lớn:** Giai đoạn lập trình tốn nhiều thời gian và công sức nhất, do đó luôn cần lượng lớn nhân sự trên thị trường.
-
----
-
-## 2.2 Ba phương pháp tạo ra ứng dụng web
-
-Dựa theo mức độ từ dễ đến khó, có 3 cách phổ biến để xây dựng ứng dụng web:
-
-### Phương pháp 1: Sử dụng Hệ quản trị nội dung (CMS)
-
-CMS (Content Management System) là phần mềm giúp tạo lập và quản lý website mà không yêu cầu kiến thức lập trình chuyên sâu.
-* **Chức năng chính:** Quản lý nội dung (bài viết, hình ảnh), Quản lý người dùng (phân quyền), Tùy biến giao diện (Theme/Template), Cài đặt tiện ích mở rộng (Plugin/Module), và Tối ưu SEO.
-* **Ví dụ phổ biến:** WordPress, Wix (Blog/Tin tức); Shopify, Magento (Thương mại điện tử); Moodle (Giáo dục).
-
-| Ưu điểm của CMS | Nhược điểm của CMS |
-| :--- | :--- |
-| - Dễ sử dụng, tiết kiệm thời gian phát triển.<br>- Không yêu cầu biết lập trình.<br>- Đa dạng giao diện và plugin có sẵn.<br>- Tối ưu tốt cho SEO.<br>- Chi phí cực thấp. | - Nguy cơ bảo mật cao (hay bị tấn công).<br>- Tốc độ có thể chậm do mã nguồn bị phình to (dư thừa).<br>- Rất khó tùy biến các chức năng đặc thù.<br>- Phụ thuộc hoàn toàn vào hệ sinh thái của nhà cung cấp. |
-
-### Phương pháp 2: Sử dụng Framework và Thư viện hỗ trợ
-
-Đây là phương pháp phổ biến nhất trong các công ty công nghệ. Framework cung cấp các bộ khung và công cụ có sẵn, giúp lập trình viên không phải "phát minh lại cái bánh xe".
-* **Frontend:** React, Angular, Vue, Svelte, Bootstrap.
-* **Backend:** Express.js (Node.js), Laravel (PHP), Spring Boot (Java), Django (Python), ASP.NET (C#).
-
-| Ưu điểm của Framework/Thư viện | Nhược điểm của Framework/Thư viện |
-| :--- | :--- |
-| - **Tốc độ:** Code nhanh hơn nhờ các module có sẵn (routing, auth).<br>- **Chất lượng:** Cấu trúc code rõ ràng, chuẩn hóa, dễ bảo trì.<br>- **Bảo mật:** Tích hợp sẵn cơ chế chống SQL Injection, XSS.<br>- **Cộng đồng:** Tài liệu phong phú, dễ dàng tìm kiếm hỗ trợ. | - Mất thời gian học (Learning curve) để làm chủ framework.<br>- Có thể làm tăng dung lượng ứng dụng với các tính năng không dùng đến.<br>- Bị gò bó theo các quy tắc và cấu trúc mà framework ép buộc. |
-
-### Phương pháp 3: Viết thuần (Viết từ con số không)
-
-Lập trình viên tự viết toàn bộ mã nguồn bằng các ngôn ngữ cơ bản (HTML, CSS, JS cho Frontend; và JS, Python, Java, PHP... cho Backend) mà tuyệt đối không dùng đến Framework hay thư viện bên thứ 3.
-
-| Ưu điểm của Viết thuần | Nhược điểm của Viết thuần |
-| :--- | :--- |
-| - Toàn quyền kiểm soát 100% mã nguồn.<br>- Tối ưu hóa hiệu năng và tốc độ tối đa (không có code thừa).<br>- Nâng cao trình độ tư duy và hiểu sâu về bản chất ngôn ngữ. | - Tốn cực kỳ nhiều thời gian và công sức.<br>- Khối lượng code khổng lồ, rất khó quản lý khi dự án lớn lên.<br>- Đòi hỏi kỹ năng chuyên môn cực cao từ lập trình viên.<br>- Chi phí phát triển rất đắt đỏ. |
-
-## 2.3. Bài tập
-
-<b>Bài 2.1 Tìm trang (web) chủ của các CMS trong lĩnh vực phát triển ứng dụng web.</b>
-
-| Tên CMS   | Trang chủ (Website) | Ghi chú |
-| :--- | :--- | :--- |
-| **WordPress** | [wordpress.org](https://wordpress.org/) <br> [wordpress.com](https://wordpress.com/) | .org là mã nguồn mở (tự cài đặt). <br> .com là dịch vụ lưu trữ sẵn. |
-| **Wix** | [wix.com](https://www.wix.com/) | Nền tảng kéo thả (Drag & Drop). |
-| **Joomla** | [joomla.org](https://www.joomla.org/) | |
-| **Drupal** | [drupal.org](https://www.drupal.org/) | |
-| **Magento** | [Magento Commerce](https://business.adobe.com/products/magento/magento-commerce.html) | Đã thuộc về Adobe Commerce. |
-| **Shopify** | [shopify.com](https://www.shopify.com/) | Chuyên TMĐT (SaaS). |
-| **Moodle** | [moodle.org](https://moodle.org/) | CMS chuyên về giáo dục (LMS). |
-| **Blogger** | [blogger.com](https://www.blogger.com/) | |
-
-<b>Bài 2.2 Tìm các trang (web) chủ của các framework và thư viện hỗ trợ trong việc phát triển ứng dụng web.</b>
-
-**1. Frontend (Giao diện người dùng)**
-
-| Tên Framework / Thư viện | Trang chủ |
-| :--- | :--- |
-| **jQuery** | [jquery.com](https://jquery.com/) |
-| **Bootstrap** | [getbootstrap.com](https://getbootstrap.com/) |
-| **D3 (D3.js)** | [d3js.org](https://d3js.org/) |
-| **React** | [react.dev](https://react.dev/) |
-| **Angular** | [angular.dev](https://angular.dev/) <br> [angular.io](https://angular.io/) |
-| **Vue (Vue.js)** | [vuejs.org](https://vuejs.org/) |
-| **Svelte** | [svelte.dev](https://svelte.dev/) |
-
-**2. Backend (Xử lý phía máy chủ)**
-
-| Tên Framework | Ngôn ngữ | Trang chủ |
-| :--- | :--- | :--- |
-| **Express.js** | Node.js | [expressjs.com](https://expressjs.com/) |
-| **Django** | Python | [djangoproject.com](https://www.djangoproject.com/) |
-| **Flask** | Python | [flask.palletsprojects.com](https://flask.palletsprojects.com/) |
-| **ASP.NET** | C# | [dotnet.microsoft.com](https://dotnet.microsoft.com/apps/aspnet) |
-| **Spring Boot** | Java | [spring.io](https://spring.io/projects/spring-boot) |
-| **Laravel** | PHP | [laravel.com](https://laravel.com/) |
-| **Ruby on Rails** | Ruby | [rubyonrails.org](https://rubyonrails.org/) |
-| **Gin** | Go (Golang) | [gin-gonic.com](https://gin-gonic.com/) |
-| **Echo** | Go (Golang) | [echo.labstack.com](https://echo.labstack.com/) |
 
 <b>Câu 2.3 Có 3 cách để tạo ra một ứng dụng web? Phát biểu nào không đúng?</b> <br>
 A. Sử dụng CMS <br>
@@ -274,68 +50,6 @@ D. Dễ dàng bảo trì và mở rộng
 
 #  3. Web server
 
-Dù phát triển web bằng phương pháp nào (viết thuần, dùng framework hay CMS), bạn đều phải hiểu về hạ tầng cơ bản nhất: **Web server**.
-
-## 3.1 Khái niệm và Chức năng cốt lõi
-**Web server (Máy chủ web)** là một máy tính hoặc phần mềm làm nhiệm vụ lưu trữ và cung cấp nội dung website/ứng dụng web cho người dùng thông qua mạng Internet.
-
-**4 Chức năng chính:**
-1. **Lưu trữ:** Lưu trữ toàn bộ mã nguồn, dữ liệu, hình ảnh, video của ứng dụng web.
-2. **Nhận Request (Yêu cầu):** Tiếp nhận yêu cầu truy cập từ trình duyệt của người dùng.
-3. **Xử lý Request:** Đọc file, thực thi mã nguồn (code) và truy vấn Cơ sở dữ liệu (Database).
-4. **Gửi Response (Phản hồi):** Trả kết quả (thường là trang HTML) về cho trình duyệt để hiển thị cho người dùng.
-
-## 3.2 Quy trình xử lý Request - Response (7 bước)
-Khi người dùng gõ một đường dẫn (URL) lên trình duyệt, Web server sẽ hoạt động theo luồng sau:
-1. Nhận request từ trình duyệt.
-2. Phân tích request và điều hướng tới ứng dụng web tương ứng để xử lý.
-3. Đọc/truy xuất dữ liệu từ Cơ sở dữ liệu (Database).
-4. Đổ dữ liệu vừa lấy được vào các mẫu giao diện (HTML Template).
-5. Gửi mã HTML hoàn chỉnh (Response) trả về cho trình duyệt.
-6. Trình duyệt nhận response và hiển thị nội dung lên màn hình.
-7. Trình duyệt tự động gửi thêm các request phụ để tải các tài nguyên tĩnh (Static files) như: CSS, JavaScript, Hình ảnh,...
-
-## 3.3 Các phần mềm Web server phổ biến
-Trên thị trường hiện nay, các phần mềm Web server được sử dụng nhiều nhất bao gồm:
-* **Apache**
-* **Nginx**
-* **Node.js** (Tích hợp sẵn khả năng làm web server)
-* **IIS** (Của Microsoft)
-* **Tomcat** (Thường dùng cho Java)
-* **Lighttpd**
-
-## 3.4 Kiến trúc của một "Máy" Web server
-Thuật ngữ "Web server" không chỉ dùng để gọi phần mềm (như Apache, Nginx) mà còn dùng để gọi **chính cái máy tính (Hardware)** được cài đặt các phần mềm đó. Một máy Web server chuẩn bao gồm:
-* **Phần cứng (Hardware):** Là máy chủ chuyên dụng, cấu hình cực mạnh, chịu tải cao, hoạt động liên tục 24/7 không tắt.
-* **Hệ điều hành (OS):** Thường dùng các hệ điều hành dành riêng cho máy chủ (như Ubuntu Server, CentOS, Windows Server).
-* **Phần mềm (Software):** Bao gồm phần mềm HTTP Server (Apache/Nginx/IIS), Hệ quản trị cơ sở dữ liệu (MySQL/PostgreSQL) và Trình biên dịch/thực thi mã nguồn (PHP/Node.js/Python).
-
-## 3.3 Bài tập
-
-<b>Bài 3.1 Thực hành lại các cài đặt trong bài học.</b>
-
-* **Cài đặt Nginx:**
-[![Thư mục cài đặt nginx](Image/3.1.png)](Image/3.1.png)
-
-* **Kiểm tra tiến trình trong Task Manager:**
-[![Nginx trong Task Manager](Image/3.2.png)](Image/3.2.png)
-
-* **Một số lệnh của Nginx:**
-[![Một số lệnh của Nginx](Image/3.3.png)](Image/3.3.png)
-
-* **Tắt Nginx:**
-[![Tắt nginx](Image/3.4.png)](Image/3.4.png)
-
-* **Web server sử dụng Nginx:**
-[![Sử dụng nginx làm web server](Image/3.5.png)](Image/3.5.png)
-
-* **Đổi cổng kết nối:**
-[![Đổi cổng kết nối](Image/3.6.png)](Image/3.6.png)
-[![Khắc phục lỗi](Image/3.7.png)](Image/3.7.png)
-
-* **Thay đổi nội dung trang web:**
-[![Thay đổi nội dung](Image/3.8.png)](Image/3.8.png)
-
 <b>Câu 3.2 Một số phần mềm web server phổ biến. Phát biểu nào không đúng?</b> <br>
 A. Apache <br>
 B. Nginx <br>
@@ -348,28 +62,8 @@ B. Nhận request từ client <br>
 C. Xử lý request <br>
 <mark>D. Nhận response từ máy client</mark>
 
-<b>Bài tập 3.4 Thực hiện một số cấu hình cho Nginx:</b>
-
-* (a) Lắng nghe trên cổng 65535
-* (b) Trỏ web root về một thư mục khác ổ đĩa `C:\` (ví dụ: `D:\TeoShop`)
-* (c) Tạo tập tin `index.py` để kiểm tra tập tin mặc định.
-* **(d) Lắng nghe trên cổng 65536 được không? Tại sao?**
-
-> **Trả lời:** Cổng mạng (port) trong giao thức TCP/UDP được định danh bằng 16-bit, có giá trị từ **0 đến 65535**. Vì vậy, cổng **65536** vượt qua phạm vi hợp lệ và sẽ không thể sử dụng được.
-
-[![Ảnh minh họa lỗi cổng](Image/3.9.png)](Image/3.9.png)
-
-
 
 #  4. Ứng dụng web bán hàng
-
-<b>Bài tập 4.1 Thực hành các cài đặt trong bài học.</b>
-
-* **Kiểm tra phiên bản Git:**
-[![Ảnh](Image/4.1.png)](Image/4.1.png)
-
-* **Cài đặt Git vào thư mục dự án:**
-[![Ảnh](Image/4.2.png)](Image/4.2.png)
 
 <b>Câu 4.2 Lệnh nào được sử dụng để nhúng Git vào thư mục dự án?</b> <br>
 <mark>A. git init</mark> <br>
@@ -399,49 +93,6 @@ D. Chatbot (Gemini), Trang web (https://codepen.io/)
 
 #  5. Nodejs và NPM
 
-## 5.1 Node.js là gì?
-**Node.js** không phải là một framework, cũng không phải là một ngôn ngữ lập trình. Nó là một **nền tảng (platform)** hay một **môi trường thực thi (runtime environment)** mã nguồn mở, đa nền tảng, cho phép chạy mã JavaScript ở phía máy chủ (Server-side) thay vì chỉ chạy trên trình duyệt.
-
-**Công dụng:** Sử dụng để tạo Web Server, ứng dụng web, công cụ dòng lệnh (CLI), và nhiều loại phần mềm khác.
-
-**Quy trình cơ bản:** Lập trình viên viết mã bằng JavaScript (thuần hoặc dùng framework như Express) -> Node.js đóng vai trò phiên dịch (biên dịch) mã nguồn -> Thực thi và xuất kết quả.
-
-### Các thành phần cốt lõi của Node.js
-Bên trong "vỏ bọc" Node.js chứa rất nhiều thành phần quan trọng, nổi bật nhất gồm:
-* **V8 Engine:** Cốt lõi của Node.js, dùng để biên dịch mã JavaScript thành mã máy tốc độ cao (được phát triển bởi Google).
-* **HTTP Module:** Thư viện có sẵn giúp tạo máy chủ web (Web Server).
-* **NPM (Node Package Manager):** Công cụ quản lý các gói thư viện bên thứ 3.
-* Các module/thư viện cốt lõi khác hỗ trợ đọc ghi file (fs), xử lý đường dẫn (path), v.v.
-
----
-
-## 5.2 Tải và Cài đặt Node.js
-* **Cài đặt:** Tải file cài đặt từ trang chủ [nodejs.org](https://nodejs.org/en) và tiến hành cài đặt như các phần mềm thông thường.
-* **Kiểm tra cài đặt:**
-    1. Mở cửa sổ dòng lệnh (Terminal / CMD / PowerShell).
-    2. Gõ lệnh: `node -v`
-    3. Nếu kết quả trả về số phiên bản (Ví dụ: `v22.14.0`) thì Node.js đã được cài đặt thành công và biến môi trường (Environment Variable) đã được thiết lập đúng.
-
----
-
-## 5.3 NPM (Node Package Manager)
-
-Khi lập trình ứng dụng thực tế, chúng ta hiếm khi tự viết code từ con số 0 mà sẽ tải các thư viện có sẵn (gọi là **Package**) về để ráp lại. Số lượng thư viện này rất khổng lồ nên cần một công cụ để quản lý, đó chính là **NPM**.
-
-* **Đặc điểm:** NPM là công cụ đi kèm mặc định khi bạn cài đặt Node.js (cài 1 được 2). Các thư viện mà dự án của bạn sử dụng được gọi là các *thành phần phụ thuộc* (**Dependencies**).
-* **Kiểm tra NPM:** Mở dòng lệnh và gõ `npm -v`. Nếu hiển thị phiên bản (Ví dụ: `10.9.2`) nghĩa là NPM đã sẵn sàng.
-
-### Cấu trúc 3 thành phần của hệ sinh thái NPM
-1. **Website ([npmjs.com](https://www.npmjs.com/)):** Nơi lập trình viên lên để tìm kiếm tài liệu và đọc hướng dẫn sử dụng của các gói thư viện (như Express, React, Lodash...).
-2. **Registry (Kho lưu trữ):** Cơ sở dữ liệu khổng lồ chứa toàn bộ mã nguồn của các thư viện trên thế giới.
-3. **CLI (Command Line Interface - Công cụ dòng lệnh):** Phần mềm chạy trong Terminal trên máy của bạn, dùng để ra lệnh cho máy tính kết nối lên Registry tải gói thư viện về.
-
-> **Quy trình sử dụng một thư viện (Ví dụ: Express):**
-> Lên website `npmjs.com` tìm kiếm `express` -> Đọc tài liệu -> Mở Terminal gõ lệnh cài đặt -> NPM CLI sẽ chạy lên Registry tải mã nguồn `express` về bỏ vào thư mục dự án của bạn.
-
-<b>Bài tập 5.1 Tải và cài đặt Nodejs, NPM trên máy tính. Kiểm tra để đảm bảo Nodejs và NPM sẵn sàng sử dụng.</b>
-[![Ảnh](Image/5.1.png)](Image/5.1.png)
-
 <b>Câu 5.2 Nodejs là gì? Phát biểu nào không đúng?</b> <br>
 A. Nodejs là môi trường phát triển ứng dụng <br>
 <mark>B. Nodejs là một ngôn ngữ lập trình</mark> <br>
@@ -457,39 +108,6 @@ C. NPM được cài đặt mặc định khi cài đặt Nodejs <br>
 
 
 #  6. Cấu hình Web server trong Nodejs
-
-<b>Bài tập 6.1 Thực hiện các cài đặt, cấu hình trong bài học.</b>
-
-* **Package.json:** [![Thêm package.json](Image/6.1.png)](Image/6.1.png)
-* **Cài đặt PNPM:** [![Cài đặt PNPM](Image/6.2.png)](Image/6.2.png)
-* **Chạy tập tin index.js:** [![Chạy index.js](Image/6.3.png)](Image/6.3.png)
-* **Cài đặt Nodemon:** [![Cài đặt Nodemon](Image/6.4.png)](Image/6.4.png)
-* **Sử dụng Nodemon:** [![Sử dụng Nodemon](Image/6.5.png)](Image/6.5.png)
-
-> *Link tài liệu thực hành: [Click here](https://drive.google.com/drive/u/2/folders/1SLn_8MV9Wh72W1Ja0-DV2bNh-S3l0Nmv)*
-
-<b>Bài tập 6.2 Làm sao biết được một gói cài đặt ở chế độ cục bộ (locally) hay toàn cục (globally)? Khi cài đặt các gói (package) ở chế độ cục bộ và toàn cục (globally) thì các gói sẽ được lưu ở đâu? Làm sao bạn biết được?</b>
-
-> **1. Cài đặt gói ở chế độ cục bộ (local)**
-> * **Lệnh:** `npm install <tên-gói>`
-> * **Nơi lưu:** Trong thư mục `node_modules` của chính dự án.
-> * **Phạm vi:** Chỉ dùng được trong dự án đó (ví dụ: `express`, `mongoose`).
-> * **Cách kiểm tra:** Xem thư mục `node_modules` hoặc gõ `npm list <tên-gói>`.
-
-> **2. Cài đặt gói ở chế độ toàn cục (global)**
-> * **Lệnh:** `npm install -g <tên-gói>`
-> * **Nơi lưu:** Thư mục hệ thống (Windows: `AppData`, Mac/Linux: `/usr/local/lib`).
-> * **Phạm vi:** Dùng chung cho mọi dự án (thường là công cụ CLI như `nodemon`, `npm`, `pnpm`).
-> * **Cách kiểm tra:** Gõ `npm list -g <tên-gói>` hoặc `where <tên-gói>`.
-
-<b>Bài tập 6.3 Sự khác nhau khi cài đặt gói ở chế độ dependencies và devDependencies?</b>
-
-| Đặc điểm | dependencies | devDependencies |
-| :--- | :--- | :--- |
-| **Mục đích** | Các gói cần thiết để ứng dụng hoạt động **thực tế** (Production). | Các gói chỉ phục vụ cho quá trình **phát triển** (Development). |
-| **Lệnh cài** | `npm install <tên-gói>` | `npm install <tên-gói> --save-dev` |
-| **Ví dụ** | `express`, `react`, `axios`. | `nodemon`, `jest`, `eslint`. |
-| **Vai trò** | Nếu thiếu, ứng dụng sẽ bị lỗi, không chạy được. | Giúp lập trình viên code nhanh hơn, không cần thiết khi chạy thật. |
 
 <b>Câu 6.4 Trong ứng dụng chạy trên nền Nodejs, tập tin package.json dùng để làm gì? Phát biểu nào không đúng?</b> <br>
 A. Chứa thông tin mô tả về ứng dụng <br>
@@ -518,76 +136,6 @@ C. Quản lý các gói phụ thuộc <br>
 
 
 #  7. Local và Global, Dependencies và devDependencies
-
-Trong quá trình làm việc với Node.js và NPM, việc hiểu rõ cách cài đặt và phân loại các gói (packages) là kỹ năng bắt buộc để quản lý dự án gọn gàng và tránh lỗi môi trường.
-
-## 7.1 Cài đặt Local (Cục bộ) và Global (Toàn cục)
-
-Hai kiểu cài đặt này quyết định **phạm vi hoạt động** và **vị trí lưu trữ** của thư viện/công cụ mà bạn tải về.
-
-### Bảng So sánh Local và Global
-
-| Tiêu chí | Cài đặt Cục bộ (Local) | Cài đặt Toàn cục (Global) |
-| :--- | :--- | :--- |
-| **Định nghĩa** | Cài đặt dành riêng cho một dự án cụ thể. | Cài đặt trên hệ thống máy tính, dùng chung cho mọi dự án. |
-| **Câu lệnh cài đặt** | `npm install <tên_gói>` | `npm install -g <tên_gói>` |
-| **Vị trí lưu trữ** | Thư mục `node_modules` nằm bên trong dự án. | Thư mục hệ thống của máy tính (Xem bằng lệnh: `npm root -g`). |
-| **Cập nhật package.json** | Có (được tự động ghi nhận vào file). | Không ghi vào `package.json` của dự án. |
-| **Khi nào nên dùng?** | Các thư viện, framework mà mã nguồn dự án trực tiếp gọi ra để sử dụng (VD: `express`). | Các công cụ dòng lệnh (CLI) cần gọi từ bất kỳ thư mục nào trên máy (VD: `nodemon`). |
-| **Lệnh gỡ bỏ** | `npm uninstall <tên_gói>` | `npm uninstall -g <tên_gói>` |
-
-> **Lưu ý thực tế:**
-> * Luôn ưu tiên cài đặt Local khi có thể để đảm bảo dự án chạy ổn định trên các máy khác nhau.
-> * Tránh lạm dụng cài Global vì nó dễ gây ra lỗi xung đột phiên bản (ví dụ dự án A cần bản cũ, dự án B cần bản mới).
-> * Nếu cần chạy một công cụ CLI được cài Local, hãy dùng lệnh `npx` (Ví dụ: `npx nodemon index.js`).
-
----
-
-## 7.2 Dependencies và devDependencies
-
-Khi bạn cài đặt gói theo kiểu cục bộ (Local), thông tin của chúng sẽ được lưu vào tập tin `package.json` dưới hai danh mục khác nhau. Việc phân chia này giúp tối ưu hóa dung lượng khi đưa web lên server thực tế.
-
-### Phân biệt Dependencies và devDependencies
-
-| Tiêu chí | Dependencies (Phụ thuộc cốt lõi) | devDependencies (Phụ thuộc phát triển) |
-| :--- | :--- | :--- |
-| **Vai trò** | Các gói bắt buộc phải có để mã nguồn chạy được trên môi trường thực tế (Production). | Các công cụ chỉ dùng để hỗ trợ lập trình viên trong quá trình viết code hoặc test (Development). |
-| **Ví dụ** | `express`, thư viện kết nối cơ sở dữ liệu, v.v. | `nodemon`, công cụ format code, công cụ test lỗi. |
-| **Câu lệnh cài đặt** | `npm install <tên_gói>` | `npm install <tên_gói> --save-dev` |
-| **Trên Server Production** | Sẽ được tải về và cài đặt đầy đủ. | Sẽ bị bỏ qua, không cài đặt để giảm dung lượng hệ thống. |
-
----
-
-## 📋 Tổng hợp các lệnh NPM cần nhớ trong bài
-
-* **Tạo file cấu hình dự án (`package.json`):** `npm init -y`
-* **Cài gói Local (vào mục Dependencies):** `npm install <tên_gói>`
-* **Cài gói Local (vào mục devDependencies):** `npm install <tên_gói> --save-dev`
-* **Gỡ bỏ gói Local:** `npm uninstall <tên_gói>`
-* **Cài gói Global:** `npm install -g <tên_gói>`
-* **Xem đường dẫn lưu các gói Global:** `npm root -g`
-* **Liệt kê danh sách các gói Global đã cài:** `npm ls -g --depth 0`
-
-<b>Bài tập 7.1 Thực hiện các cài đặt trong bài học.</b>
-
-* **Cài đặt cục bộ:** 
-[![Package.json cục bộ](Image/7.1.png)](Image/7.1.png) 
-
-[![Express cục bộ](Image/7.2.png)](Image/7.2.png)
-
-* **Gỡ bỏ gói cục bộ:** 
-[![Xóa express](Image/7.3.png)](Image/7.3.png)
-
-* **Cài đặt toàn cục:** 
-[![Nodemon toàn cục](Image/7.4.png)](Image/7.4.png)
-
-* **Kiểm tra vị trí gói toàn cục:** 
-[![Global position](Image/7.5.png)](Image/7.5.png)
-
-* **Xem tất cả gói đã cài:** 
-[![All global files](Image/7.6.png)](Image/7.6.png)
-
-> *Link tài liệu thực hành: [Click here](https://drive.google.com/drive/u/2/folders/1SLn_8MV9Wh72W1Ja0-DV2bNh-S3l0Nmv)*
 
 <b>Câu 7.2 Trong môi trường phát triển ứng dụng Nodejs, phát biểu nào không đúng khi nói về gói cục bộ?</b> <br>
 A. Gói cục bộ được cài đặt trong thư mục node_modules của dự án <br>
@@ -625,22 +173,6 @@ D. Các gói trong devDependencies không được cài đặt khi chạy npm in
 
 #  8. Lập trình đồng bộ, hàm ẩn danh trong JavaScript
 
-<b>Bài 8.1 Cài đặt các ví dụ trong bài học.<b>
-
-* **Tính toán căn bản:** 
-[![Tính toán căn bản](Image/8.1.png)](Image/8.1.png) 
-
-* **Vòng lặp đồng bộ:**
-[![Vòng lặp đồng bộ](Image/8.2.png)](Image/8.2.png)
-
-* **Chặn luồng:** 
-[![Chặn luồng](Image/8.3.png)](Image/8.3.png)
-
-* **Hàm ẩn danh:** 
-[![Hàm ẩn danh](Image/8.4.png)](Image/8.4.png)
-
-> *Link tài liệu thực hành: [Click here](https://drive.google.com/drive/u/2/folders/1SLn_8MV9Wh72W1Ja0-DV2bNh-S3l0Nmv)*
-
 <b>Câu 8.2: Lập trình đồng bộ trong JavaScript là gì? Phát biểu nào sau đây không đúng?</b> <br>
 <mark>A. Lập trình đồng bộ không chặn luồng, cho phép các lệnh tiếp theo chạy ngay cả khi tác vụ chưa hoàn tất.</mark> <br>
 B. Các lệnh được thực thi tuần tự, theo thứ tự từ trên xuống dưới. <br>
@@ -660,22 +192,6 @@ C. Hàm ẩn danh thường được gán vào biến hoặc truyền làm tham 
 
 
 #  9. Hàm mũi tên, lập trình bất đồng bộ trong JavaScript
-
-<b>Bài 9.1 Cài đặt các ví dụ trong bài học.<b>
-
-* **Hàm không có tham số:**
-[![Hàm không có tham số](Image/9.1.png)](Image/9.1.png)
-
-* **Hàm có một tham số:**
-[![Hàm có một tham số](Image/9.2.png)](Image/9.2.png)
-
-* **Từ khóa this trong hàm mũi tên:**
-[![Từ khóa this](Image/9.3.png)](Image/9.3.png)
-
-* **Lập trình bất đồng bộ, sử dụng chặn luồng:**
-[![Chặn luồng](Image/9.4.png)](Image/9.4.png)
-
-> *Link tài liệu thực hành: [Click here](https://drive.google.com/drive/u/2/folders/1SLn_8MV9Wh72W1Ja0-DV2bNh-S3l0Nmv)*
 
 <b>Câu 9.2: Hàm mũi tên (arrow function) là gì? Phát biểu nào sau đây không đúng về hàm mũi tên?</b> <br>
 A. Hàm mũi tên có cú pháp ngắn gọn, giúp viết mã dễ đọc hơn. <br>
@@ -890,47 +406,9 @@ D. API/Thư viện (gắn với một ngôn ngữ lập trình): JDBC hoặc Seq
 
 > *Giải thích: Lệnh `ping` (sử dụng giao thức ICMP) là một công cụ mạng dùng để kiểm tra xem một máy chủ có đang kết nối mạng hay không, đo độ trễ đường truyền. Nó hoàn toàn không có khả năng kết nối, truy vấn hay thao tác với hệ quản trị cơ sở dữ liệu (như việc gửi lệnh SQL).*
 
-<b>Bài tập 20.3 Tải, cài đặt Postgresql. Sử dụng psql và pgAdmin để kết nối tới Postgresql.</b>
-
-* **Cài đặt Postgresql:**
-[![Postgresql](Image/20.1.png)](Image/20.1.png)
-
-[![Postgresql](Image/20.2.png)](Image/20.2.png)
-
 
 
 # 21. Lập trình với cơ sở dữ liệu
-
-## 21.1 Code First và Database First
-Đây là 2 phương pháp tiếp cận khi kết nối Mã nguồn (Code) với Cơ sở dữ liệu (Database) thông qua ORM.
-
-* **Code First (Ưu tiên Code):** * **Bản chất:** Viết cấu trúc dữ liệu bằng Code trước (Class/Model), sau đó tool sẽ tự động tạo bảng trong Database.
-    * **Khi nào dùng:** Dự án làm mới từ đầu.
-* **Database First (Ưu tiên DB):**
-    * **Bản chất:** Có sẵn các bảng trong Database trước, sau đó tool sẽ tự động sinh ra Code (Model) tương ứng.
-    * **Khi nào dùng:** Dự án kế thừa, đã có sẵn Database từ trước.
-
-## 21.2 ORM (Object-Relational Mapping)
-* **Khái niệm:** Là kỹ thuật "Ánh xạ Quan hệ - Đối tượng". Nó kết nối các Đối tượng trong code với các Bảng trong Database.
-* **Lợi ích:** Giúp lập trình viên gọi dữ liệu bằng các **hàm/phương thức** (như `User.findAll()`) thay vì phải ngồi viết các câu lệnh SQL dài dòng (như `SELECT * FROM User`). Tăng tốc độ code và dễ bảo trì.
-* **Công cụ phổ biến:** Sequelize, Prisma (Node.js), Eloquent (PHP/Laravel), Hibernate (Java).
-
-## 21.3 Các thư viện cần cài đặt (PostgreSQL + Sequelize)
-1. **`pg`:** Cầu nối (Driver) giúp Node.js giao tiếp được với máy chủ PostgreSQL.
-2. **`pg-hstore`:** Tiện ích hỗ trợ lưu trữ dữ liệu dạng key-value (từ vựng của PostgreSQL).
-3. **`sequelize`:** Thư viện ORM cốt lõi.
-4. **`sequelize-cli`** (Cài Global): Công cụ dòng lệnh (nhập lệnh trên Terminal) để tự động sinh code.
-
-## 21.4 Cấu trúc thư mục (Lệnh `sequelize init`)
-Khi chạy lệnh khởi tạo `sequelize init`, hệ thống sẽ sinh ra 4 thư mục cực kỳ quan trọng:
-1. **`config/`**: Nơi chứa cấu hình kết nối DB (Tên database, username, password, cổng mạng).
-2. **`models/`**: Nơi định nghĩa cấu trúc các bảng (Mỗi bảng là một Model/Class).
-3. **`migrations/`**: Chứa code để **tạo cái VỎ** (Lịch sử thay đổi cấu trúc bảng: thêm bảng, xóa cột).
-4. **`seeders/`**: Chứa code để **bơm cái RUỘT** (Nhúng dữ liệu mẫu ban đầu vào DB để test).
-
----
-
-## Phần Bài Tập Trắc Nghiệm
 
 <b>Câu hỏi 21.1 Phát biểu nào sau đây KHÔNG đúng về Code First và Database First?</b> <br>
 A. Code First là phương pháp định nghĩa mô hình dữ liệu trong mã nguồn trước, sau đó ORM sẽ tạo hoặc cập nhật schema cơ sở dữ liệu. <br>
